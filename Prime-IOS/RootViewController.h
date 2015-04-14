@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class PRTabBarController;
 @interface RootViewController : UIViewController
 
+@property (nonatomic, strong) PRTabBarController *tabBarController;
 
 @end
 

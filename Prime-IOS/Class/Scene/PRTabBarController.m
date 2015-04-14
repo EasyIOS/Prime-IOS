@@ -1,18 +1,18 @@
 //
-//  TimeAxisScene.m
+//  PRTabBarController.m
 //  Prime-IOS
 //
-//  Created by gypsii001 on 15/4/14.
+//  Created by zhu_haibo on 15/4/14.
 //  Copyright (c) 2015年 EasyIOS. All rights reserved.
 //
 
-#import "TimeAxisScene.h"
+#import "PRTabBarController.h"
 
-@interface TimeAxisScene ()
+@interface PRTabBarController ()
 
 @end
 
-@implementation TimeAxisScene
+@implementation PRTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

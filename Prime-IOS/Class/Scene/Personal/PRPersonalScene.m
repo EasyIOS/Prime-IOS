@@ -1,18 +1,18 @@
 //
-//  MessageScene.m
+//  PersonalScene.m
 //  Prime-IOS
 //
 //  Created by gypsii001 on 15/4/14.
 //  Copyright (c) 2015年 EasyIOS. All rights reserved.
 //
 
-#import "MessageScene.h"
+#import "PRPersonalScene.h"
 
-@interface MessageScene ()
+@interface PRPersonalScene ()
 
 @end
 
-@implementation MessageScene
+@implementation PRPersonalScene
 
 - (void)viewDidLoad {
     [super viewDidLoad];

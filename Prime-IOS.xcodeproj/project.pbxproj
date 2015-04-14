@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52CB56441ADD44760015F1AE /* Aspect-Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB56431ADD44760015F1AE /* Aspect-Appearance.m */; };
+		52CB56471ADD46080015F1AE /* PRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB56461ADD46080015F1AE /* PRTabBarController.m */; };
+		52CB564A1ADD4A710015F1AE /* PRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB56491ADD4A710015F1AE /* PRNavigationController.m */; };
 		EDDBA8701ADD12D300442FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA86F1ADD12D300442FB9 /* main.m */; };
 		EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8721ADD12D300442FB9 /* AppDelegate.m */; };
 		EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8751ADD12D300442FB9 /* RootViewController.m */; };
@@ -14,10 +17,10 @@
 		EDDBA87B1ADD12D300442FB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDBA87A1ADD12D300442FB9 /* Images.xcassets */; };
 		EDDBA87E1ADD12D300442FB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDBA87C1ADD12D300442FB9 /* LaunchScreen.xib */; };
 		EDDBA88A1ADD12D300442FB9 /* Prime_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8891ADD12D300442FB9 /* Prime_IOSTests.m */; };
-		EDDBA8AA1ADD1A5400442FB9 /* TimeAxisScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8A91ADD1A5400442FB9 /* TimeAxisScene.m */; };
-		EDDBA8AD1ADD1A6000442FB9 /* MessageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AC1ADD1A6000442FB9 /* MessageScene.m */; };
-		EDDBA8B01ADD1A6D00442FB9 /* PersonalScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AF1ADD1A6D00442FB9 /* PersonalScene.m */; };
-		EDDBA8B31ADD1A8E00442FB9 /* EventScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8B21ADD1A8E00442FB9 /* EventScene.m */; };
+		EDDBA8AA1ADD1A5400442FB9 /* PRTimeAxisScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8A91ADD1A5400442FB9 /* PRTimeAxisScene.m */; };
+		EDDBA8AD1ADD1A6000442FB9 /* PRMessageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AC1ADD1A6000442FB9 /* PRMessageScene.m */; };
+		EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */; };
+		EDDBA8B31ADD1A8E00442FB9 /* PREventScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */; };
 		EE6C42C51987D86F286F11C3 /* libPods-Prime-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5361FE6EF74CCAB3A5A142D2 /* libPods-Prime-IOS.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52CB56431ADD44760015F1AE /* Aspect-Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Aspect-Appearance.m"; sourceTree = "<group>"; };
+		52CB56451ADD46080015F1AE /* PRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarController.h; path = Class/Scene/PRTabBarController.h; sourceTree = "<group>"; };
+		52CB56461ADD46080015F1AE /* PRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarController.m; path = Class/Scene/PRTabBarController.m; sourceTree = "<group>"; };
+		52CB56481ADD4A710015F1AE /* PRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRNavigationController.h; path = Class/Scene/PRNavigationController.h; sourceTree = "<group>"; };
+		52CB56491ADD4A710015F1AE /* PRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRNavigationController.m; path = Class/Scene/PRNavigationController.m; sourceTree = "<group>"; };
+		52CB564B1ADD533D0015F1AE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5361FE6EF74CCAB3A5A142D2 /* libPods-Prime-IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Prime-IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F67E1C9071B75776D32ACA /* Pods-Prime-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-IOS/Pods-Prime-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDBA86A1ADD12D300442FB9 /* Prime-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,14 +56,14 @@
 		EDDBA8831ADD12D300442FB9 /* Prime-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBA8881ADD12D300442FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDDBA8891ADD12D300442FB9 /* Prime_IOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prime_IOSTests.m; sourceTree = "<group>"; };
-		EDDBA8A81ADD1A5400442FB9 /* TimeAxisScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeAxisScene.h; path = Class/Scene/TimeAxis/TimeAxisScene.h; sourceTree = "<group>"; };
-		EDDBA8A91ADD1A5400442FB9 /* TimeAxisScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeAxisScene.m; path = Class/Scene/TimeAxis/TimeAxisScene.m; sourceTree = "<group>"; };
-		EDDBA8AB1ADD1A6000442FB9 /* MessageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageScene.h; path = Class/Scene/Message/MessageScene.h; sourceTree = "<group>"; };
-		EDDBA8AC1ADD1A6000442FB9 /* MessageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageScene.m; path = Class/Scene/Message/MessageScene.m; sourceTree = "<group>"; };
-		EDDBA8AE1ADD1A6D00442FB9 /* PersonalScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonalScene.h; path = Class/Scene/Personal/PersonalScene.h; sourceTree = "<group>"; };
-		EDDBA8AF1ADD1A6D00442FB9 /* PersonalScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonalScene.m; path = Class/Scene/Personal/PersonalScene.m; sourceTree = "<group>"; };
-		EDDBA8B11ADD1A8E00442FB9 /* EventScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventScene.h; path = Class/Scene/Event/EventScene.h; sourceTree = "<group>"; };
-		EDDBA8B21ADD1A8E00442FB9 /* EventScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventScene.m; path = Class/Scene/Event/EventScene.m; sourceTree = "<group>"; };
+		EDDBA8A81ADD1A5400442FB9 /* PRTimeAxisScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTimeAxisScene.h; path = Class/Scene/TimeAxis/PRTimeAxisScene.h; sourceTree = "<group>"; };
+		EDDBA8A91ADD1A5400442FB9 /* PRTimeAxisScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTimeAxisScene.m; path = Class/Scene/TimeAxis/PRTimeAxisScene.m; sourceTree = "<group>"; };
+		EDDBA8AB1ADD1A6000442FB9 /* PRMessageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRMessageScene.h; path = Class/Scene/Message/PRMessageScene.h; sourceTree = "<group>"; };
+		EDDBA8AC1ADD1A6000442FB9 /* PRMessageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRMessageScene.m; path = Class/Scene/Message/PRMessageScene.m; sourceTree = "<group>"; };
+		EDDBA8AE1ADD1A6D00442FB9 /* PRPersonalScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRPersonalScene.h; path = Class/Scene/Personal/PRPersonalScene.h; sourceTree = "<group>"; };
+		EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRPersonalScene.m; path = Class/Scene/Personal/PRPersonalScene.m; sourceTree = "<group>"; };
+		EDDBA8B11ADD1A8E00442FB9 /* PREventScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PREventScene.h; path = Class/Scene/Event/PREventScene.h; sourceTree = "<group>"; };
+		EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PREventScene.m; path = Class/Scene/Event/PREventScene.m; sourceTree = "<group>"; };
 		F825AA23A6CCFC729DF8636C /* Pods-Prime-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-IOS/Pods-Prime-IOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,8 +142,10 @@
 		EDDBA86D1ADD12D300442FB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52CB56431ADD44760015F1AE /* Aspect-Appearance.m */,
 				EDDBA86E1ADD12D300442FB9 /* Info.plist */,
 				EDDBA86F1ADD12D300442FB9 /* main.m */,
+				52CB564B1ADD533D0015F1AE /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,8 +178,8 @@
 		EDDBA8941ADD15CF00442FB9 /* TimeAxis */ = {
 			isa = PBXGroup;
 			children = (
-				EDDBA8A81ADD1A5400442FB9 /* TimeAxisScene.h */,
-				EDDBA8A91ADD1A5400442FB9 /* TimeAxisScene.m */,
+				EDDBA8A81ADD1A5400442FB9 /* PRTimeAxisScene.h */,
+				EDDBA8A91ADD1A5400442FB9 /* PRTimeAxisScene.m */,
 			);
 			name = TimeAxis;
 			sourceTree = "<group>";
@@ -176,8 +187,8 @@
 		EDDBA8951ADD161400442FB9 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				EDDBA8AB1ADD1A6000442FB9 /* MessageScene.h */,
-				EDDBA8AC1ADD1A6000442FB9 /* MessageScene.m */,
+				EDDBA8AB1ADD1A6000442FB9 /* PRMessageScene.h */,
+				EDDBA8AC1ADD1A6000442FB9 /* PRMessageScene.m */,
 			);
 			name = Message;
 			sourceTree = "<group>";
@@ -185,8 +196,8 @@
 		EDDBA8961ADD162900442FB9 /* Personal */ = {
 			isa = PBXGroup;
 			children = (
-				EDDBA8AE1ADD1A6D00442FB9 /* PersonalScene.h */,
-				EDDBA8AF1ADD1A6D00442FB9 /* PersonalScene.m */,
+				EDDBA8AE1ADD1A6D00442FB9 /* PRPersonalScene.h */,
+				EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */,
 			);
 			name = Personal;
 			sourceTree = "<group>";
@@ -194,8 +205,8 @@
 		EDDBA8971ADD164700442FB9 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				EDDBA8B11ADD1A8E00442FB9 /* EventScene.h */,
-				EDDBA8B21ADD1A8E00442FB9 /* EventScene.m */,
+				EDDBA8B11ADD1A8E00442FB9 /* PREventScene.h */,
+				EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -207,6 +218,10 @@
 				EDDBA8961ADD162900442FB9 /* Personal */,
 				EDDBA8951ADD161400442FB9 /* Message */,
 				EDDBA8941ADD15CF00442FB9 /* TimeAxis */,
+				52CB56451ADD46080015F1AE /* PRTabBarController.h */,
+				52CB56461ADD46080015F1AE /* PRTabBarController.m */,
+				52CB56481ADD4A710015F1AE /* PRNavigationController.h */,
+				52CB56491ADD4A710015F1AE /* PRNavigationController.m */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -346,11 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDDBA8B01ADD1A6D00442FB9 /* PersonalScene.m in Sources */,
-				EDDBA8AA1ADD1A5400442FB9 /* TimeAxisScene.m in Sources */,
-				EDDBA8B31ADD1A8E00442FB9 /* EventScene.m in Sources */,
+				52CB56471ADD46080015F1AE /* PRTabBarController.m in Sources */,
+				EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */,
+				EDDBA8AA1ADD1A5400442FB9 /* PRTimeAxisScene.m in Sources */,
+				52CB564A1ADD4A710015F1AE /* PRNavigationController.m in Sources */,
+				EDDBA8B31ADD1A8E00442FB9 /* PREventScene.m in Sources */,
+				52CB56441ADD44760015F1AE /* Aspect-Appearance.m in Sources */,
 				EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */,
-				EDDBA8AD1ADD1A6000442FB9 /* MessageScene.m in Sources */,
+				EDDBA8AD1ADD1A6000442FB9 /* PRMessageScene.m in Sources */,
 				EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */,
 				EDDBA8701ADD12D300442FB9 /* main.m in Sources */,
 			);
@@ -417,6 +435,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -458,6 +477,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -477,6 +497,8 @@
 			baseConfigurationReference = A8F67E1C9071B75776D32ACA /* Pods-Prime-IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Prime-IOS/PrefixHeader.pch";
 				INFOPLIST_FILE = "Prime-IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +510,8 @@
 			baseConfigurationReference = F825AA23A6CCFC729DF8636C /* Pods-Prime-IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Prime-IOS/PrefixHeader.pch";
 				INFOPLIST_FILE = "Prime-IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

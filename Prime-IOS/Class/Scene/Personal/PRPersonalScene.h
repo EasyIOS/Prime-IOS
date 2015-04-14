@@ -1,5 +1,5 @@
 //
-//  TimeAxisScene.h
+//  PersonalScene.h
 //  Prime-IOS
 //
 //  Created by gypsii001 on 15/4/14.
@@ -8,6 +8,6 @@
 
 #import "Scene.h"
 
-@interface TimeAxisScene : Scene
+@interface PRPersonalScene : Scene
 
 @end

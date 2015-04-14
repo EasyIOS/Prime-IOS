@@ -1,5 +1,5 @@
 //
-//  MessageScene.h
+//  TimeAxisScene.h
 //  Prime-IOS
 //
 //  Created by gypsii001 on 15/4/14.
@@ -8,6 +8,6 @@
 
 #import "Scene.h"
 
-@interface MessageScene : Scene
+@interface PRTimeAxisScene : Scene
 
 @end

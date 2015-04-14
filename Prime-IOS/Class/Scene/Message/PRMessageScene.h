@@ -1,5 +1,5 @@
 //
-//  EventScene.h
+//  MessageScene.h
 //  Prime-IOS
 //
 //  Created by gypsii001 on 15/4/14.
@@ -8,6 +8,6 @@
 
 #import "Scene.h"
 
-@interface EventScene : Scene
+@interface PRMessageScene : Scene
 
 @end
