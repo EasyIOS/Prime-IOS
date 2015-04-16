@@ -21,6 +21,9 @@
 		EDDBA8AD1ADD1A6000442FB9 /* PRMessageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AC1ADD1A6000442FB9 /* PRMessageScene.m */; };
 		EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */; };
 		EDDBA8B31ADD1A8E00442FB9 /* PREventScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */; };
+		EDE09C8E1ADF5C9500CFF733 /* PRTabBarIterm.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE09C8D1ADF5C9500CFF733 /* PRTabBarIterm.m */; };
+		EDE09C951ADF721000CFF733 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE09C921ADF721000CFF733 /* DataCenter.m */; };
+		EDE09C961ADF721000CFF733 /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE09C941ADF721000CFF733 /* UserCenter.m */; };
 		EE6C42C51987D86F286F11C3 /* libPods-Prime-IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5361FE6EF74CCAB3A5A142D2 /* libPods-Prime-IOS.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,12 @@
 		EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRPersonalScene.m; path = Class/Scene/Personal/PRPersonalScene.m; sourceTree = "<group>"; };
 		EDDBA8B11ADD1A8E00442FB9 /* PREventScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PREventScene.h; path = Class/Scene/Event/PREventScene.h; sourceTree = "<group>"; };
 		EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PREventScene.m; path = Class/Scene/Event/PREventScene.m; sourceTree = "<group>"; };
+		EDE09C8C1ADF5C9500CFF733 /* PRTabBarIterm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarIterm.h; path = Class/Scene/PRTabBarIterm.h; sourceTree = "<group>"; };
+		EDE09C8D1ADF5C9500CFF733 /* PRTabBarIterm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarIterm.m; path = Class/Scene/PRTabBarIterm.m; sourceTree = "<group>"; };
+		EDE09C911ADF721000CFF733 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCenter.h; path = Class/Data/DataCenter.h; sourceTree = "<group>"; };
+		EDE09C921ADF721000CFF733 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataCenter.m; path = Class/Data/DataCenter.m; sourceTree = "<group>"; };
+		EDE09C931ADF721000CFF733 /* UserCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCenter.h; path = Class/Data/UserCenter.h; sourceTree = "<group>"; };
+		EDE09C941ADF721000CFF733 /* UserCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserCenter.m; path = Class/Data/UserCenter.m; sourceTree = "<group>"; };
 		F825AA23A6CCFC729DF8636C /* Pods-Prime-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-IOS/Pods-Prime-IOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +179,7 @@
 		EDDBA8931ADD15C200442FB9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDE09C901ADF720600CFF733 /* Data */,
 				EDDBA8A71ADD1A1800442FB9 /* Scene */,
 			);
 			name = Class;
@@ -222,8 +232,21 @@
 				52CB56461ADD46080015F1AE /* PRTabBarController.m */,
 				52CB56481ADD4A710015F1AE /* PRNavigationController.h */,
 				52CB56491ADD4A710015F1AE /* PRNavigationController.m */,
+				EDE09C8C1ADF5C9500CFF733 /* PRTabBarIterm.h */,
+				EDE09C8D1ADF5C9500CFF733 /* PRTabBarIterm.m */,
 			);
 			name = Scene;
+			sourceTree = "<group>";
+		};
+		EDE09C901ADF720600CFF733 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EDE09C911ADF721000CFF733 /* DataCenter.h */,
+				EDE09C921ADF721000CFF733 /* DataCenter.m */,
+				EDE09C931ADF721000CFF733 /* UserCenter.h */,
+				EDE09C941ADF721000CFF733 /* UserCenter.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,12 +387,15 @@
 				52CB56471ADD46080015F1AE /* PRTabBarController.m in Sources */,
 				EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */,
 				EDDBA8AA1ADD1A5400442FB9 /* PRTimeAxisScene.m in Sources */,
+				EDE09C961ADF721000CFF733 /* UserCenter.m in Sources */,
 				52CB564A1ADD4A710015F1AE /* PRNavigationController.m in Sources */,
 				EDDBA8B31ADD1A8E00442FB9 /* PREventScene.m in Sources */,
 				52CB56441ADD44760015F1AE /* Aspect-Appearance.m in Sources */,
 				EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */,
 				EDDBA8AD1ADD1A6000442FB9 /* PRMessageScene.m in Sources */,
+				EDE09C8E1ADF5C9500CFF733 /* PRTabBarIterm.m in Sources */,
 				EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */,
+				EDE09C951ADF721000CFF733 /* DataCenter.m in Sources */,
 				EDDBA8701ADD12D300442FB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

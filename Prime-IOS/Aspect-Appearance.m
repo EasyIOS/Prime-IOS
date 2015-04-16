@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <XAspect/XAspect.h>
 #import "RootViewController.h"
+#import "DataCenter.h"
 
 #define AtAspect Appearance
 
@@ -16,9 +17,32 @@
 @classPatchField(AppDelegate)
 AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions)
 {
-    RootViewController *rootVC = [[RootViewController alloc] init];
-    self.window.rootViewController = rootVC;
+    self.database = [[AppDatabase alloc] initWithMigrations];
+    
+    [Action actionConfigHost:@"www.iosx.me" client:@"easyios" codeKey:@"Code" rightCode:0 msgKey:@"Msg"];
+    [$ swizzleClassMethod:@selector(objectAtIndex:) with:@selector(safeObjectAtIndex:) in:[NSArray class]];
+    
+    self.window.rootViewController = [RootViewController sharedInstance];
     [self.window makeKeyAndVisible];
+    
+    [[$ rac_didNetworkChanges]
+     subscribeNext:^(NSNumber *status) {
+         AFNetworkReachabilityStatus networkStatus = [status intValue];
+         switch (networkStatus) {
+             case AFNetworkReachabilityStatusUnknown:
+             case AFNetworkReachabilityStatusNotReachable:
+                 [DataCenter sharedInstance].isWifi = NO;
+                 [[DialogUtil sharedInstance] showDlg:self.window textOnly:@"网络连接不给力"];
+                 break;
+             case AFNetworkReachabilityStatusReachableViaWWAN:
+                 [DataCenter sharedInstance].isWifi = NO;
+                 [[DialogUtil sharedInstance] showDlg:self.window textOnly:@"当前使用移动数据网络"];
+                 break;
+             case AFNetworkReachabilityStatusReachableViaWiFi:
+                 [DataCenter sharedInstance].isWifi = YES;
+                 break;
+         }
+     }];
     
     return XAMessageForward(application:application didFinishLaunchingWithOptions:launchOptions);
 }

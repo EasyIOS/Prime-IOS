@@ -13,7 +13,7 @@
 #import "PRMessageScene.h"
 #import "PRPersonalScene.h"
 #import "PREventScene.h"
-#import "YALTabBarItem.h"
+#import "PRTabBarIterm.h"
 #import "YALAnimatingTabBarConstants.h"
 #import "PRNavigationController.h"
 
@@ -29,60 +29,60 @@
 @implementation RootViewController
 @synthesize tabBarController;
 
+DEF_SINGLETON(RootViewController)
+
 - (void)setupYALTabBarController {
     
     _timeNavigationController = [[PRNavigationController alloc] initWithRootViewController:[[PRTimeAxisScene alloc] init]];
 
     _newsNavigationController = [[PRNavigationController alloc] initWithRootViewController:[[PRMessageScene alloc]init]];
     
+    _activityNavigationController = [[PRNavigationController alloc] initWithRootViewController:[[PREventScene alloc] init]];
+    
     _personNavigationController = [[PRNavigationController alloc] initWithRootViewController:[[PRPersonalScene alloc] init]];
     
-    _activityNavigationController = [[PRNavigationController alloc] initWithRootViewController:[[PREventScene alloc] init]];
+    
     
     tabBarController = [[PRTabBarController alloc] init];
     
     //prepare leftBarItems
-    YALTabBarItem *item1 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"nearby_icon"]
+    PRTabBarIterm *item1 = [[PRTabBarIterm alloc] initWithItemImage:[UIImage imageNamed:@"nearby_icon"]
+                                                      leftItemImage:[UIImage imageNamed:@"search_icon"]
+                                                     rightItemImage:[UIImage imageNamed:@"new_chat_icon"]];
+    
+    
+    PRTabBarIterm *item2 = [[PRTabBarIterm alloc] initWithItemImage:[UIImage imageNamed:@"profile_icon"]
                                                       leftItemImage:nil
-                                                     rightItemImage:nil];
-    
-    
-    YALTabBarItem *item2 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"profile_icon"]
-                                                      leftItemImage:[UIImage imageNamed:@"edit_icon"]
                                                      rightItemImage:nil];
     
     tabBarController.leftBarItems = @[item1, item2];
     
     //prepare rightBarItems
-    YALTabBarItem *item3 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"chats_icon"]
-                                                      leftItemImage:[UIImage imageNamed:@"search_icon"]
-                                                     rightItemImage:[UIImage imageNamed:@"new_chat_icon"]];
-    
-    
-    YALTabBarItem *item4 = [[YALTabBarItem alloc] initWithItemImage:[UIImage imageNamed:@"settings_icon"]
+    PRTabBarIterm *item3 = [[PRTabBarIterm alloc] initWithItemImage:[UIImage imageNamed:@"chats_icon"]
                                                       leftItemImage:nil
                                                      rightItemImage:nil];
     
+    
+    PRTabBarIterm *item4 = [[PRTabBarIterm alloc] initWithItemImage:[UIImage imageNamed:@"settings_icon"]
+                                                      leftItemImage:[UIImage imageNamed:@"edit_icon"]
+                                                     rightItemImage:nil];
+    
     tabBarController.rightBarItems = @[item3, item4];
+    
     
     tabBarController.centerButtonImage = [UIImage imageNamed:@"plus_icon"];
     
     //customize tabBarView
     tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
     tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
-    
-    //    tabBarController.tabBarView.backgroundColor = [UIColor colorWithRed:94.0/255.0 green:91.0/255.0 blue:149.0/255.0 alpha:1];
     tabBarController.tabBarView.backgroundColor = [UIColor clearColor];
-    
-    //    tabBarController.tabBarView.tabBarColor = [UIColor colorWithRed:72.0/255.0 green:211.0/255.0 blue:178.0/255.0 alpha:1];
-    
     tabBarController.tabBarView.tabBarColor = UIColorFromRGB(0x34cdff);
     tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
     tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
     tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
     
-    tabBarController.viewControllers = [NSArray arrayWithObjects:_timeNavigationController,_newsNavigationController,_personNavigationController,_activityNavigationController,nil];
-    tabBarController.selectedIndex = 2;
+    tabBarController.viewControllers = [NSArray arrayWithObjects:_timeNavigationController,_newsNavigationController,_activityNavigationController,_personNavigationController,nil];
+    tabBarController.selectedIndex = 0;
     [self.view addSubview:tabBarController.view];
     
 }

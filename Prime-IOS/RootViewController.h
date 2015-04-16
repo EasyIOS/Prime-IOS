@@ -13,5 +13,7 @@
 
 @property (nonatomic, strong) PRTabBarController *tabBarController;
 
+AS_SINGLETON(RootViewController)
+
 @end
 

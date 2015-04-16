@@ -10,6 +10,8 @@
 
 @interface PRTimeAxisScene ()
 
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
 
 @implementation PRTimeAxisScene
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"时间轴";
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
