@@ -7,10 +7,16 @@
 //
 
 #import "PRTimeAxisScene.h"
+#import "PRTimeAxisDatasource.h"
+#import "PRTimeAxisRequest.h"
+#import "PRTimeAxisSceneModel.h"
 
 @interface PRTimeAxisScene ()
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) PRTimeAxisDatasource *timeAxisDatasource;
+@property (nonatomic, strong) PRTimeAxisRequest *timeAxisRequest;
+@property (nonatomic, strong) PRTimeAxisSceneModel *timeAxisSceneModel;
 
 @end
 
@@ -21,7 +27,16 @@
     // Do any additional setup after loading the view.
     self.title = @"时间轴";
     
-    
+    @weakify(self);
+    self.timeAxisSceneModel.timeAxisRequest.requestNeedActive = YES;
+    [[RACObserve(self.timeAxisSceneModel, tagList)
+      filter:^BOOL(NSMutableArray* value) {
+          return value.count >0;
+      }]
+     subscribeNext:^(NSMutableArray *value) {
+         @strongify(self);
+         [self.tableView reloadData];
+     }];
 }
 
 - (void)didReceiveMemoryWarning {
