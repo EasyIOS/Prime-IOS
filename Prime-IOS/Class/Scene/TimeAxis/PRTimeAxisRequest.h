@@ -10,4 +10,8 @@
 
 @interface PRTimeAxisRequest : Request
 
+@property(nonatomic,strong) NSNumber *pageSize;
+@property(nonatomic,strong) NSNumber *page;
+@property(nonatomic,strong) NSString *tagName;
+
 @end

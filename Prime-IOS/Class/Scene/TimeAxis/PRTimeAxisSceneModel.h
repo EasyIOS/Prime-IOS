@@ -8,10 +8,12 @@
 
 #import "SceneModel.h"
 #import "PRTimeAxisRequest.h"
+#import "TopicEntityList.h"
 
 @interface PRTimeAxisSceneModel : SceneModel
 
 @property (nonatomic, strong) PRTimeAxisRequest *timeAxisRequest;
-@property(nonatomic,retain) NSMutableArray *tagList;
+@property (nonatomic, strong) NSMutableArray *topicList;
+@property (nonatomic, strong) TopicEntityList *topicEntityList;
 
 @end

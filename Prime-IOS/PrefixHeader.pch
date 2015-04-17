@@ -11,4 +11,7 @@
 
 #import "UIColor+MLPFlatColors.h"
 #import "swift-bridge.h"
+
+#define HOST @"www.iosx.me/?isApi=1"
+
 #endif
