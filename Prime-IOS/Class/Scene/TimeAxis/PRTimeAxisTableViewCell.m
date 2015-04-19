@@ -19,10 +19,21 @@
 
 -(void)configureCell:(id)aItems
 {
-    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, PScreenWidth, [self getCellHeight])];
-    for (int i = 0; i < [aItems count]; i++) {
-        
-    }
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, APP_SCREEN_WIDTH, [self getCellHeight])];
+    backView.backgroundColor = [UIColor clearColor];
+    
+    float x=10;
+    float y=8;
+    float w=36;
+    
+    //Avatar
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:RECT(x, y, w, w)];
+//    iv.image = [[aItems objectForKey:@"TheAuthor"] objectForKey:@"Avatar"];
+    iv.layer.masksToBounds=YES;
+    iv.layer.borderWidth=0;
+    iv.layer.cornerRadius=self.width/2;
+    [self.contentView addSubview:iv];
+    
     EZLog(@"aIterms ==> %@", aItems);
 }
 /*

@@ -72,6 +72,7 @@
 		52D481DB1AE2A5DB009838FB /* PRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarController.m; path = Class/Scene/Bar/PRTabBarController.m; sourceTree = "<group>"; };
 		52D481DC1AE2A5DB009838FB /* PRTabBarIterm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarIterm.h; path = Class/Scene/Bar/PRTabBarIterm.h; sourceTree = "<group>"; };
 		52D481DD1AE2A5DB009838FB /* PRTabBarIterm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarIterm.m; path = Class/Scene/Bar/PRTabBarIterm.m; sourceTree = "<group>"; };
+		52D88AC31AE3F51700993011 /* MacroFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroFile.h; path = Class/Util/MacroFile.h; sourceTree = "<group>"; };
 		5361FE6EF74CCAB3A5A142D2 /* libPods-Prime-IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Prime-IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F67E1C9071B75776D32ACA /* Pods-Prime-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-IOS/Pods-Prime-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDBA86A1ADD12D300442FB9 /* Prime-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +178,14 @@
 				52D481D51AE2A5B0009838FB /* PRFeedRequest.m */,
 			);
 			name = Request;
+			sourceTree = "<group>";
+		};
+		52D88AC11AE3F26B00993011 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				52D88AC31AE3F51700993011 /* MacroFile.h */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		6D690ED61C4A5E07F3F97BE8 /* Frameworks */ = {
@@ -327,6 +336,7 @@
 				EDDBA8951ADD161400442FB9 /* Message */,
 				EDDBA8941ADD15CF00442FB9 /* TimeAxis */,
 				EDFD10E91AE0A07500F0EFCF /* Bar */,
+				52D88AC11AE3F26B00993011 /* Util */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
