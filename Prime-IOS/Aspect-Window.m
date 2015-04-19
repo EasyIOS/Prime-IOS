@@ -20,7 +20,7 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     
     self.database = [[AppDatabase alloc] initWithMigrations];
     
-    [Action actionConfigHost:HOST client:@"prime-ios" codeKey:@"code" rightCode:0 msgKey:@"Msg"];
+    [Action actionConfigHost:HOST client:@"prime-ios" codeKey:@"Code" rightCode:0 msgKey:@"Msg"];
     [$ swizzleClassMethod:@selector(objectAtIndex:) with:@selector(safeObjectAtIndex:) in:[NSArray class]];
     
     self.window.rootViewController = [RootViewController sharedInstance];

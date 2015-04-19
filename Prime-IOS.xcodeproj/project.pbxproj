@@ -10,8 +10,12 @@
 		52AD2C591ADFF2E400716681 /* PRDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AD2C581ADFF2E400716681 /* PRDatasource.m */; };
 		52AD2C5C1ADFF57D00716681 /* PRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AD2C5B1ADFF57D00716681 /* PRTableViewCell.m */; };
 		52CB56441ADD44760015F1AE /* Aspect-Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB56431ADD44760015F1AE /* Aspect-Appearance.m */; };
-		52CB56471ADD46080015F1AE /* PRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB56461ADD46080015F1AE /* PRTabBarController.m */; };
-		52CB564A1ADD4A710015F1AE /* PRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB56491ADD4A710015F1AE /* PRNavigationController.m */; };
+		52D481D11AE2A53C009838FB /* PRTimeAxisTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481D01AE2A53C009838FB /* PRTimeAxisTableView.m */; };
+		52D481D41AE2A592009838FB /* ActionSceneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481D31AE2A592009838FB /* ActionSceneModel.m */; };
+		52D481D61AE2A5B0009838FB /* PRFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481D51AE2A5B0009838FB /* PRFeedRequest.m */; };
+		52D481DE1AE2A5DB009838FB /* PRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481D91AE2A5DB009838FB /* PRNavigationController.m */; };
+		52D481DF1AE2A5DB009838FB /* PRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481DB1AE2A5DB009838FB /* PRTabBarController.m */; };
+		52D481E01AE2A5DB009838FB /* PRTabBarIterm.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481DD1AE2A5DB009838FB /* PRTabBarIterm.m */; };
 		EDDBA8701ADD12D300442FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA86F1ADD12D300442FB9 /* main.m */; };
 		EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8721ADD12D300442FB9 /* AppDelegate.m */; };
 		EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8751ADD12D300442FB9 /* RootViewController.m */; };
@@ -23,7 +27,6 @@
 		EDDBA8AD1ADD1A6000442FB9 /* PRMessageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AC1ADD1A6000442FB9 /* PRMessageScene.m */; };
 		EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */; };
 		EDDBA8B31ADD1A8E00442FB9 /* PREventScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */; };
-		EDE09C8E1ADF5C9500CFF733 /* PRTabBarIterm.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE09C8D1ADF5C9500CFF733 /* PRTabBarIterm.m */; };
 		EDE09C951ADF721000CFF733 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE09C921ADF721000CFF733 /* DataCenter.m */; };
 		EDE09C961ADF721000CFF733 /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE09C941ADF721000CFF733 /* UserCenter.m */; };
 		EDFD10C91AE0989F00F0EFCF /* Aspect-Window.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFD10C81AE0989F00F0EFCF /* Aspect-Window.m */; };
@@ -56,11 +59,19 @@
 		52AD2C5A1ADFF57D00716681 /* PRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTableViewCell.h; path = Class/Data/PRTableViewCell.h; sourceTree = "<group>"; };
 		52AD2C5B1ADFF57D00716681 /* PRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTableViewCell.m; path = Class/Data/PRTableViewCell.m; sourceTree = "<group>"; };
 		52CB56431ADD44760015F1AE /* Aspect-Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Aspect-Appearance.m"; sourceTree = "<group>"; };
-		52CB56451ADD46080015F1AE /* PRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarController.h; path = Class/Scene/PRTabBarController.h; sourceTree = "<group>"; };
-		52CB56461ADD46080015F1AE /* PRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarController.m; path = Class/Scene/PRTabBarController.m; sourceTree = "<group>"; };
-		52CB56481ADD4A710015F1AE /* PRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRNavigationController.h; path = Class/Scene/PRNavigationController.h; sourceTree = "<group>"; };
-		52CB56491ADD4A710015F1AE /* PRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRNavigationController.m; path = Class/Scene/PRNavigationController.m; sourceTree = "<group>"; };
 		52CB564B1ADD533D0015F1AE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		52D481CF1AE2A53C009838FB /* PRTimeAxisTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTimeAxisTableView.h; path = Class/Scene/TimeAxis/PRTimeAxisTableView.h; sourceTree = "<group>"; };
+		52D481D01AE2A53C009838FB /* PRTimeAxisTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTimeAxisTableView.m; path = Class/Scene/TimeAxis/PRTimeAxisTableView.m; sourceTree = "<group>"; };
+		52D481D21AE2A592009838FB /* ActionSceneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSceneModel.h; path = Class/SceneModel/ActionSceneModel.h; sourceTree = "<group>"; };
+		52D481D31AE2A592009838FB /* ActionSceneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSceneModel.m; path = Class/SceneModel/ActionSceneModel.m; sourceTree = "<group>"; };
+		52D481D51AE2A5B0009838FB /* PRFeedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRFeedRequest.m; path = Class/Resquest/PRFeedRequest.m; sourceTree = "<group>"; };
+		52D481D71AE2A5BC009838FB /* PRFeedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRFeedRequest.h; path = Class/Resquest/PRFeedRequest.h; sourceTree = "<group>"; };
+		52D481D81AE2A5DB009838FB /* PRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRNavigationController.h; path = Class/Scene/Bar/PRNavigationController.h; sourceTree = "<group>"; };
+		52D481D91AE2A5DB009838FB /* PRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRNavigationController.m; path = Class/Scene/Bar/PRNavigationController.m; sourceTree = "<group>"; };
+		52D481DA1AE2A5DB009838FB /* PRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarController.h; path = Class/Scene/Bar/PRTabBarController.h; sourceTree = "<group>"; };
+		52D481DB1AE2A5DB009838FB /* PRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarController.m; path = Class/Scene/Bar/PRTabBarController.m; sourceTree = "<group>"; };
+		52D481DC1AE2A5DB009838FB /* PRTabBarIterm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarIterm.h; path = Class/Scene/Bar/PRTabBarIterm.h; sourceTree = "<group>"; };
+		52D481DD1AE2A5DB009838FB /* PRTabBarIterm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarIterm.m; path = Class/Scene/Bar/PRTabBarIterm.m; sourceTree = "<group>"; };
 		5361FE6EF74CCAB3A5A142D2 /* libPods-Prime-IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Prime-IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F67E1C9071B75776D32ACA /* Pods-Prime-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-IOS/Pods-Prime-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDBA86A1ADD12D300442FB9 /* Prime-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +95,6 @@
 		EDDBA8AF1ADD1A6D00442FB9 /* PRPersonalScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRPersonalScene.m; path = Class/Scene/Personal/PRPersonalScene.m; sourceTree = "<group>"; };
 		EDDBA8B11ADD1A8E00442FB9 /* PREventScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PREventScene.h; path = Class/Scene/Event/PREventScene.h; sourceTree = "<group>"; };
 		EDDBA8B21ADD1A8E00442FB9 /* PREventScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PREventScene.m; path = Class/Scene/Event/PREventScene.m; sourceTree = "<group>"; };
-		EDE09C8C1ADF5C9500CFF733 /* PRTabBarIterm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarIterm.h; path = Class/Scene/PRTabBarIterm.h; sourceTree = "<group>"; };
-		EDE09C8D1ADF5C9500CFF733 /* PRTabBarIterm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarIterm.m; path = Class/Scene/PRTabBarIterm.m; sourceTree = "<group>"; };
 		EDE09C911ADF721000CFF733 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCenter.h; path = Class/Data/DataCenter.h; sourceTree = "<group>"; };
 		EDE09C921ADF721000CFF733 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataCenter.m; path = Class/Data/DataCenter.m; sourceTree = "<group>"; };
 		EDE09C931ADF721000CFF733 /* UserCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCenter.h; path = Class/Data/UserCenter.h; sourceTree = "<group>"; };
@@ -150,6 +159,24 @@
 				EDFD10F11AE1042F00F0EFCF /* TopicEntityList.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		52D481C71AE28A88009838FB /* SceneModel */ = {
+			isa = PBXGroup;
+			children = (
+				52D481D21AE2A592009838FB /* ActionSceneModel.h */,
+				52D481D31AE2A592009838FB /* ActionSceneModel.m */,
+			);
+			name = SceneModel;
+			sourceTree = "<group>";
+		};
+		52D481CB1AE28BC1009838FB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				52D481D71AE2A5BC009838FB /* PRFeedRequest.h */,
+				52D481D51AE2A5B0009838FB /* PRFeedRequest.m */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 		6D690ED61C4A5E07F3F97BE8 /* Frameworks */ = {
@@ -237,6 +264,8 @@
 		EDDBA8931ADD15C200442FB9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				52D481CB1AE28BC1009838FB /* Request */,
+				52D481C71AE28A88009838FB /* SceneModel */,
 				52AD2C5D1ADFF81200716681 /* Model */,
 				EDE09C901ADF720600CFF733 /* Data */,
 				EDDBA8A71ADD1A1800442FB9 /* Scene */,
@@ -249,6 +278,8 @@
 			children = (
 				EDDBA8A81ADD1A5400442FB9 /* PRTimeAxisScene.h */,
 				EDDBA8A91ADD1A5400442FB9 /* PRTimeAxisScene.m */,
+				52D481CF1AE2A53C009838FB /* PRTimeAxisTableView.h */,
+				52D481D01AE2A53C009838FB /* PRTimeAxisTableView.m */,
 				EDFD10E51AE0A04000F0EFCF /* PRTimeAxisSceneModel.h */,
 				EDFD10E61AE0A04000F0EFCF /* PRTimeAxisSceneModel.m */,
 				EDFD10E31AE0A04000F0EFCF /* PRTimeAxisRequest.h */,
@@ -318,12 +349,12 @@
 		EDFD10E91AE0A07500F0EFCF /* Bar */ = {
 			isa = PBXGroup;
 			children = (
-				52CB56451ADD46080015F1AE /* PRTabBarController.h */,
-				52CB56461ADD46080015F1AE /* PRTabBarController.m */,
-				52CB56481ADD4A710015F1AE /* PRNavigationController.h */,
-				52CB56491ADD4A710015F1AE /* PRNavigationController.m */,
-				EDE09C8C1ADF5C9500CFF733 /* PRTabBarIterm.h */,
-				EDE09C8D1ADF5C9500CFF733 /* PRTabBarIterm.m */,
+				52D481D81AE2A5DB009838FB /* PRNavigationController.h */,
+				52D481D91AE2A5DB009838FB /* PRNavigationController.m */,
+				52D481DA1AE2A5DB009838FB /* PRTabBarController.h */,
+				52D481DB1AE2A5DB009838FB /* PRTabBarController.m */,
+				52D481DC1AE2A5DB009838FB /* PRTabBarIterm.h */,
+				52D481DD1AE2A5DB009838FB /* PRTabBarIterm.m */,
 			);
 			name = Bar;
 			sourceTree = "<group>";
@@ -467,24 +498,27 @@
 				EDFD10E71AE0A04000F0EFCF /* PRTimeAxisRequest.m in Sources */,
 				EDFD10EC1AE0ABFD00F0EFCF /* PRTimeAxisDatasource.m in Sources */,
 				52AD2C591ADFF2E400716681 /* PRDatasource.m in Sources */,
-				52CB56471ADD46080015F1AE /* PRTabBarController.m in Sources */,
 				EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */,
 				EDDBA8AA1ADD1A5400442FB9 /* PRTimeAxisScene.m in Sources */,
 				EDFD10DB1AE09D4D00F0EFCF /* RuserEntity.m in Sources */,
 				EDE09C961ADF721000CFF733 /* UserCenter.m in Sources */,
-				52CB564A1ADD4A710015F1AE /* PRNavigationController.m in Sources */,
+				52D481D61AE2A5B0009838FB /* PRFeedRequest.m in Sources */,
+				52D481DF1AE2A5DB009838FB /* PRTabBarController.m in Sources */,
 				EDFD10D91AE09D4D00F0EFCF /* AuthorEntity.m in Sources */,
+				52D481D11AE2A53C009838FB /* PRTimeAxisTableView.m in Sources */,
 				EDDBA8B31ADD1A8E00442FB9 /* PREventScene.m in Sources */,
 				52CB56441ADD44760015F1AE /* Aspect-Appearance.m in Sources */,
 				52AD2C5C1ADFF57D00716681 /* PRTableViewCell.m in Sources */,
+				52D481D41AE2A592009838FB /* ActionSceneModel.m in Sources */,
 				EDFD10F21AE1042F00F0EFCF /* TopicEntityList.m in Sources */,
 				EDFD10DA1AE09D4D00F0EFCF /* CategoryEntity.m in Sources */,
 				EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */,
 				EDFD10D81AE09D4D00F0EFCF /* AppendEntity.m in Sources */,
+				52D481DE1AE2A5DB009838FB /* PRNavigationController.m in Sources */,
 				EDFD10C91AE0989F00F0EFCF /* Aspect-Window.m in Sources */,
 				EDDBA8AD1ADD1A6000442FB9 /* PRMessageScene.m in Sources */,
-				EDE09C8E1ADF5C9500CFF733 /* PRTabBarIterm.m in Sources */,
 				EDFD10E81AE0A04000F0EFCF /* PRTimeAxisSceneModel.m in Sources */,
+				52D481E01AE2A5DB009838FB /* PRTabBarIterm.m in Sources */,
 				EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */,
 				EDE09C951ADF721000CFF733 /* DataCenter.m in Sources */,
 				EDFD10EF1AE0EB6F00F0EFCF /* PRTimeAxisTableViewCell.m in Sources */,

@@ -12,6 +12,9 @@
 #import "UIColor+MLPFlatColors.h"
 #import "swift-bridge.h"
 
-#define HOST @"www.iosx.me/?isApi=1"
+#define HOST @"www.iosx.me"
+
+#define DEFAULT_PAGE_SIZE @20
+#define PScreenWidth [[UIScreen mainScreen] bounds].size.width
 
 #endif
