@@ -24,6 +24,11 @@
 
 @implementation PRTableViewCell (configureCell)
 
+-(int)getCellHeight
+{
+    return 0;
+}
+
 - (void)configureCell:(id)aItems {}
 
 @end

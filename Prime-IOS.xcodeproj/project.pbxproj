@@ -16,6 +16,8 @@
 		52D481DE1AE2A5DB009838FB /* PRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481D91AE2A5DB009838FB /* PRNavigationController.m */; };
 		52D481DF1AE2A5DB009838FB /* PRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481DB1AE2A5DB009838FB /* PRTabBarController.m */; };
 		52D481E01AE2A5DB009838FB /* PRTabBarIterm.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D481DD1AE2A5DB009838FB /* PRTabBarIterm.m */; };
+		EDC15DC71AE4DAB200D70A53 /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC15DC51AE4DAB200D70A53 /* UIView+Extras.m */; };
+		EDC15DCB1AE4FF1F00D70A53 /* PRDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC15DCA1AE4FF1F00D70A53 /* PRDataObject.m */; };
 		EDDBA8701ADD12D300442FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA86F1ADD12D300442FB9 /* main.m */; };
 		EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8721ADD12D300442FB9 /* AppDelegate.m */; };
 		EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8751ADD12D300442FB9 /* RootViewController.m */; };
@@ -72,9 +74,13 @@
 		52D481DB1AE2A5DB009838FB /* PRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarController.m; path = Class/Scene/Bar/PRTabBarController.m; sourceTree = "<group>"; };
 		52D481DC1AE2A5DB009838FB /* PRTabBarIterm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTabBarIterm.h; path = Class/Scene/Bar/PRTabBarIterm.h; sourceTree = "<group>"; };
 		52D481DD1AE2A5DB009838FB /* PRTabBarIterm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTabBarIterm.m; path = Class/Scene/Bar/PRTabBarIterm.m; sourceTree = "<group>"; };
-		52D88AC31AE3F51700993011 /* MacroFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroFile.h; path = Class/Util/MacroFile.h; sourceTree = "<group>"; };
 		5361FE6EF74CCAB3A5A142D2 /* libPods-Prime-IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Prime-IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F67E1C9071B75776D32ACA /* Pods-Prime-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-IOS/Pods-Prime-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC15DBD1AE4C97A00D70A53 /* MacroFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroFile.h; path = Class/Base/MacroFile.h; sourceTree = "<group>"; };
+		EDC15DC41AE4DAB200D70A53 /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extras.h"; path = "Class/Base/OC_Category/UIView+Extras.h"; sourceTree = "<group>"; };
+		EDC15DC51AE4DAB200D70A53 /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extras.m"; path = "Class/Base/OC_Category/UIView+Extras.m"; sourceTree = "<group>"; };
+		EDC15DC91AE4FF1F00D70A53 /* PRDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRDataObject.h; path = Class/Base/Common/PRDataObject.h; sourceTree = "<group>"; };
+		EDC15DCA1AE4FF1F00D70A53 /* PRDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRDataObject.m; path = Class/Base/Common/PRDataObject.m; sourceTree = "<group>"; };
 		EDDBA86A1ADD12D300442FB9 /* Prime-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBA86E1ADD12D300442FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDDBA86F1ADD12D300442FB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -180,12 +186,13 @@
 			name = Request;
 			sourceTree = "<group>";
 		};
-		52D88AC11AE3F26B00993011 /* Util */ = {
+		52D88AC11AE3F26B00993011 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				52D88AC31AE3F51700993011 /* MacroFile.h */,
+				EDC15DC81AE4FEE800D70A53 /* Common */,
+				EDC15DC11AE4D97400D70A53 /* OC_Category */,
 			);
-			name = Util;
+			name = Base;
 			sourceTree = "<group>";
 		};
 		6D690ED61C4A5E07F3F97BE8 /* Frameworks */ = {
@@ -203,6 +210,24 @@
 				F825AA23A6CCFC729DF8636C /* Pods-Prime-IOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDC15DC11AE4D97400D70A53 /* OC_Category */ = {
+			isa = PBXGroup;
+			children = (
+				EDC15DC41AE4DAB200D70A53 /* UIView+Extras.h */,
+				EDC15DC51AE4DAB200D70A53 /* UIView+Extras.m */,
+			);
+			name = OC_Category;
+			sourceTree = "<group>";
+		};
+		EDC15DC81AE4FEE800D70A53 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EDC15DC91AE4FF1F00D70A53 /* PRDataObject.h */,
+				EDC15DCA1AE4FF1F00D70A53 /* PRDataObject.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		EDDBA8611ADD12D300442FB9 = {
@@ -249,6 +274,7 @@
 				EDDBA86E1ADD12D300442FB9 /* Info.plist */,
 				EDDBA86F1ADD12D300442FB9 /* main.m */,
 				52CB564B1ADD533D0015F1AE /* PrefixHeader.pch */,
+				EDC15DBD1AE4C97A00D70A53 /* MacroFile.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -336,7 +362,7 @@
 				EDDBA8951ADD161400442FB9 /* Message */,
 				EDDBA8941ADD15CF00442FB9 /* TimeAxis */,
 				EDFD10E91AE0A07500F0EFCF /* Bar */,
-				52D88AC11AE3F26B00993011 /* Util */,
+				52D88AC11AE3F26B00993011 /* Base */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -504,10 +530,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC15DCB1AE4FF1F00D70A53 /* PRDataObject.m in Sources */,
 				EDFD10DC1AE09D4D00F0EFCF /* TopicEntity.m in Sources */,
 				EDFD10E71AE0A04000F0EFCF /* PRTimeAxisRequest.m in Sources */,
 				EDFD10EC1AE0ABFD00F0EFCF /* PRTimeAxisDatasource.m in Sources */,
 				52AD2C591ADFF2E400716681 /* PRDatasource.m in Sources */,
+				EDC15DC71AE4DAB200D70A53 /* UIView+Extras.m in Sources */,
 				EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */,
 				EDDBA8AA1ADD1A5400442FB9 /* PRTimeAxisScene.m in Sources */,
 				EDFD10DB1AE09D4D00F0EFCF /* RuserEntity.m in Sources */,

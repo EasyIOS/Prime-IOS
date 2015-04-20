@@ -52,6 +52,12 @@ cellConfigureBlock:(PRDatasourceCellBlock)cellBlock
                                                             forIndexPath:indexPath];
     id item = [self itemAtIndexPath:indexPath];
     self.cellBlock(cell, item);
+    
+    if (indexPath.row%2 == 0) {
+        cell.backgroundColor = [UIColor redColor];
+    } else {
+        cell.backgroundColor = [UIColor yellowColor];
+    }
     return cell;
 }
 
