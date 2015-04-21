@@ -56,14 +56,17 @@
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[aItems objectForKey:@"Addtime"] longValue]];
     NSString *time = [date timeAgo];
     [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    EZLog(@"aIterms ==> %@", aItems);
+    EZLog(@"aIterms ==> %@", aItems);
+    
+    NSString *content = [aItems objectForKey:@"Content"];
+    [view buildContentLabel:content frame:RECT(50,  y-3.5+19+20, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
     
     
-    [view buildLabel:time frame:RECT(50,  y-3.5+19+20, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*2, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*3, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*4, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*5, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+//    [view buildLabel:content frame:RECT(50,  y-3.5+19+20*2, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+    
+//    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*3, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+//    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*4, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+//    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*5, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
 //    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
 //    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
 //    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
