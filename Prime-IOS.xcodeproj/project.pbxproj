@@ -303,6 +303,7 @@
 		EDDBA8931ADD15C200442FB9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				52D88AC11AE3F26B00993011 /* Base */,
 				52D481CB1AE28BC1009838FB /* Request */,
 				52D481C71AE28A88009838FB /* SceneModel */,
 				52AD2C5D1ADFF81200716681 /* Model */,
@@ -366,7 +367,6 @@
 				EDDBA8951ADD161400442FB9 /* Message */,
 				EDDBA8941ADD15CF00442FB9 /* TimeAxis */,
 				EDFD10E91AE0A07500F0EFCF /* Bar */,
-				52D88AC11AE3F26B00993011 /* Base */,
 			);
 			name = Scene;
 			sourceTree = "<group>";

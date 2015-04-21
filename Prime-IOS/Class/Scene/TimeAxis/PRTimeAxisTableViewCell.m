@@ -16,6 +16,11 @@
 
 -(NSInteger) getCellHeight
 {
+//    static int i = 0;
+//    i++;
+//    if (i%2 == 0) {
+//        return 100;
+//    }
     return 300;
 }
 
@@ -51,7 +56,7 @@
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[aItems objectForKey:@"Addtime"] longValue]];
     NSString *time = [date timeAgo];
     [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    EZLog(@"aIterms ==> %@", aItems);
+//    EZLog(@"aIterms ==> %@", aItems);
     
     
     [view buildLabel:time frame:RECT(50,  y-3.5+19+20, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];

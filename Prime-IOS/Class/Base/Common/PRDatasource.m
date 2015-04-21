@@ -7,6 +7,7 @@
 //
 
 #import "PRDatasource.h"
+#import "PRTableViewCell.h"
 
 @interface PRDatasource ()
 
@@ -50,7 +51,17 @@ cellConfigureBlock:(PRDatasourceCellBlock)cellBlock
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier
                                                             forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:self.reuseIdentifier];
+    } else
+    {
+        while ([cell.contentView.subviews lastObject] != nil) {
+            [(UIView *)[cell.contentView.subviews lastObject] removeFromSuperview];
+        }
+    }
+    
     id item = [self itemAtIndexPath:indexPath];
+    
     self.cellBlock(cell, item);
     
     if (indexPath.row%2 == 0) {
@@ -59,6 +70,17 @@ cellConfigureBlock:(PRDatasourceCellBlock)cellBlock
         cell.backgroundColor = [UIColor yellowColor];
     }
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (ValidArray([tableView visibleCells])) {
+        id cell = [[tableView visibleCells] objectAtIndex:0];
+        if ([cell isKindOfClass:[PRTableViewCell class]]) {
+            return [cell getCellHeight];
+        }
+    }
+    return 0;
 }
 
 @end

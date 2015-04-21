@@ -10,7 +10,7 @@
 
 typedef void(^PRDatasourceCellBlock)(id cell, id item);
 
-@interface PRDatasource : NSObject <UITableViewDataSource>
+@interface PRDatasource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 -(id) initWithItem:(NSArray *)aItem
     cellIdentifier:(NSString *)aIdentifier

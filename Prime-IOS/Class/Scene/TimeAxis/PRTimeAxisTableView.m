@@ -15,7 +15,6 @@
 
 @property (nonatomic, strong) PRTimeAxisSceneModel *timeAxisSceneModel;
 @property (nonatomic, strong) PRTimeAxisDatasource *timeAxisDatasource;
-@property (nonatomic, strong) NSArray *dataA;
 
 @end
 
@@ -40,19 +39,11 @@
                                                               cellIdentifier:@"timeAxis"
                                                           cellConfigureBlock:cellBlock];
         self.dataSource = self.timeAxisDatasource;
-        self.dataA = [dataArray copy];
-        self.delegate = self;
+        self.delegate = self.timeAxisDatasource;
         self.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self registerClass:[PRTimeAxisTableViewCell class] forCellReuseIdentifier:@"timeAxis"];
     }
     return self;
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    PRTimeAxisTableViewCell *cell = [self.dataA objectAtIndex:indexPath.row];
-    return [cell getCellHeight];
 }
 
 /*

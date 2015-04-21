@@ -21,5 +21,6 @@
 #define APP_SCREEN_HEIGHT           [UIScreen mainScreen].bounds.size.height
 
 #define Font(s) [UIFont systemFontOfSize:s]
+#define ValidArray(f) (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
 
 #endif
