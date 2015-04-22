@@ -59,7 +59,7 @@
     EZLog(@"aIterms ==> %@", aItems);
     
     NSString *content = [aItems objectForKey:@"Content"];
-    [view buildContentLabel:content frame:RECT(50,  y-3.5+19+20, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+    [view buildContentLabel:content frame:RECT(50,  y-3.5+19+20, 200, 200) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
     
     
 //    [view buildLabel:content frame:RECT(50,  y-3.5+19+20*2, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
