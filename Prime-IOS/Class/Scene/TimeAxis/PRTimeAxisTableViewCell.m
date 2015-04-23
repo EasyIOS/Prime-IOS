@@ -45,33 +45,24 @@
     // name
     NSString* name = [[aItems objectForKey:@"TheAuthor"] objectForKey:@"Username"];
     [view buildLabel:name frame:RECT(50, y-3.5, 180, 20) font:Font(13.5) color:UIColorFromRGB(0x1a1a1a)];
-    
-    // time
-//    NSDateFormatter *formatt = [[NSDateFormatter alloc] init];
-//    NSCalendar
-//    [formatt setDateFormat:@"yyyy-MM-dd"];
-//    NSDate *date = [formatt dateFromString:[aItems objectForKey:@"Addtime"]];
-//    NSDate *time = [[NSDate dateWithTimeIntervalSince1970:[[aItems objectForKey:@"Addtime"] longValue]] ;
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+
+    //time
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[[aItems objectForKey:@"Addtime"] longValue]];
     NSString *time = [date timeAgo];
     [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
     EZLog(@"aIterms ==> %@", aItems);
     
+    NSString *title = [aItems objectForKey:@"Title"];
     NSString *content = [aItems objectForKey:@"Content"];
-    [view buildContentLabel:content frame:RECT(50,  y-3.5+19+20, 200, 200) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    
-    
-//    [view buildLabel:content frame:RECT(50,  y-3.5+19+20*2, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*3, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*4, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19+20*5, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-//    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    
+    content = [self newContent:content];
+    [view buildContentLabel:title frame:RECT(50,  y-3.5+19+20, APP_SCREEN_WIDTH-70, 30) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+    [view buildContentLabel:content frame:RECT(50,  y-3.5+50, APP_SCREEN_WIDTH-70, 200) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+}
+
+-(NSString *) newContent:(NSString *)content
+{
+    RxMatch* match  = [content firstMatchWithDetails:RX(@"<p>")];
+    return @"";
 }
 /*
 // Only override drawRect: if you perform custom drawing.

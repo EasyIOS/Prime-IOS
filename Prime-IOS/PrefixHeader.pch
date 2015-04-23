@@ -11,7 +11,7 @@
 
 #import "UIColor+MLPFlatColors.h"
 #import "swift-bridge.h"
-
+#import "Easy-Extention.h"
 #import "MacroFile.h"
 
 #define HOST @"www.iosx.me"
