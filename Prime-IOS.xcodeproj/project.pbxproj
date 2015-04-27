@@ -18,6 +18,7 @@
 		EDC15DCB1AE4FF1F00D70A53 /* PRDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC15DCA1AE4FF1F00D70A53 /* PRDataObject.m */; };
 		EDC15DD01AE503BE00D70A53 /* PRDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC15DCD1AE503BE00D70A53 /* PRDatasource.m */; };
 		EDC15DD11AE503BE00D70A53 /* PRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC15DCF1AE503BE00D70A53 /* PRTableViewCell.m */; };
+		EDD139051AEE33E900733906 /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD139041AEE33E900733906 /* NSObject+ObjectMap.m */; };
 		EDDBA8701ADD12D300442FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA86F1ADD12D300442FB9 /* main.m */; };
 		EDDBA8731ADD12D300442FB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8721ADD12D300442FB9 /* AppDelegate.m */; };
 		EDDBA8761ADD12D300442FB9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8751ADD12D300442FB9 /* RootViewController.m */; };
@@ -81,6 +82,8 @@
 		EDC15DCD1AE503BE00D70A53 /* PRDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRDatasource.m; path = Class/Base/Common/PRDatasource.m; sourceTree = "<group>"; };
 		EDC15DCE1AE503BE00D70A53 /* PRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRTableViewCell.h; path = Class/Base/Common/PRTableViewCell.h; sourceTree = "<group>"; };
 		EDC15DCF1AE503BE00D70A53 /* PRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRTableViewCell.m; path = Class/Base/Common/PRTableViewCell.m; sourceTree = "<group>"; };
+		EDD139031AEE33E900733906 /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ObjectMap.h"; path = "Class/Base/OC_Category/NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		EDD139041AEE33E900733906 /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ObjectMap.m"; path = "Class/Base/OC_Category/NSObject+ObjectMap.m"; sourceTree = "<group>"; };
 		EDDBA86A1ADD12D300442FB9 /* Prime-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDBA86E1ADD12D300442FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDDBA86F1ADD12D300442FB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 		EDC15DC11AE4D97400D70A53 /* OC_Category */ = {
 			isa = PBXGroup;
 			children = (
+				EDD139031AEE33E900733906 /* NSObject+ObjectMap.h */,
+				EDD139041AEE33E900733906 /* NSObject+ObjectMap.m */,
 				EDC15DC41AE4DAB200D70A53 /* UIView+Extras.h */,
 				EDC15DC51AE4DAB200D70A53 /* UIView+Extras.m */,
 			);
@@ -537,6 +542,7 @@
 				EDC15DC71AE4DAB200D70A53 /* UIView+Extras.m in Sources */,
 				EDDBA8B01ADD1A6D00442FB9 /* PRPersonalScene.m in Sources */,
 				EDDBA8AA1ADD1A5400442FB9 /* PRTimeAxisScene.m in Sources */,
+				EDD139051AEE33E900733906 /* NSObject+ObjectMap.m in Sources */,
 				EDFD10DB1AE09D4D00F0EFCF /* RuserEntity.m in Sources */,
 				EDE09C961ADF721000CFF733 /* UserCenter.m in Sources */,
 				52D481D61AE2A5B0009838FB /* PRFeedRequest.m in Sources */,
