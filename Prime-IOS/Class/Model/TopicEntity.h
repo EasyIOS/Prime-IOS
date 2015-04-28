@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 EasyIOS. All rights reserved.
 //
 
-//#import "AppendEntity.h"
+#import "AppendEntity.h"
 #import "CategoryEntity.h"
 #import "AuthorEntity.h"
 #import "RuserEntity.h"
@@ -28,7 +28,7 @@
 @property (nonatomic, strong) NSString *Closecomment;
 @property (nonatomic, strong) NSString *IsTop;
 
-@property (nonatomic, strong) NSString<Optional> *Append;
+@property (nonatomic, strong) AppendEntity<Optional> *Append;
 @property (nonatomic, strong) CategoryEntity *TheCategory;
 @property (nonatomic, strong) AuthorEntity *TheAuthor;
 @property (nonatomic, strong) RuserEntity *TheRuser;
