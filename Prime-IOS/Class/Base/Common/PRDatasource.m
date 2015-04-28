@@ -53,22 +53,13 @@ cellConfigureBlock:(PRDatasourceCellBlock)cellBlock
                                                             forIndexPath:indexPath];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:self.reuseIdentifier];
-    } else
-    {
+    } else {
         while ([cell.contentView.subviews lastObject] != nil) {
             [(UIView *)[cell.contentView.subviews lastObject] removeFromSuperview];
         }
     }
-    
     id item = [self itemAtIndexPath:indexPath];
-    
     self.cellBlock(cell, item);
-    
-    if (indexPath.row%2 == 0) {
-        cell.backgroundColor = [UIColor redColor];
-    } else {
-        cell.backgroundColor = [UIColor yellowColor];
-    }
     return cell;
 }
 

@@ -37,7 +37,7 @@
                                                           cellConfigureBlock:cellBlock];
         self.dataSource = self.timeAxisDatasource;
         self.delegate = self.timeAxisDatasource;
-        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        self.separatorStyle = UITableViewCellSeparatorStyleNone;
         self.allowsSelection = NO;
         [self registerClass:[PRTimeAxisTableViewCell class] forCellReuseIdentifier:@"timeAxis"];
     }

@@ -12,6 +12,8 @@
 #import "NSDate+EasyExtend.h"
 #import "TopicEntity.h"
 
+#define TimeAxisCellLeft 50.0
+
 @implementation PRTimeAxisTableViewCell
 
 
@@ -46,19 +48,19 @@
     
     // name
     NSString* name = topic.TheAuthor.Username;
-    [view buildLabel:name frame:RECT(50, y-3.5, 180, 20) font:Font(13.5) color:UIColorFromRGB(0x1a1a1a)];
+    [view buildLabel:name frame:RECT(TimeAxisCellLeft, y-3.5, 180, 20) font:Font(13.5) color:UIColorFromRGB(0x1a1a1a)];
 
     //time
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[topic.Addtime longLongValue]];
     NSString *time = [date timeAgo];
-    [view buildLabel:time frame:RECT(50,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+    [view buildLabel:time frame:RECT(TimeAxisCellLeft,  y-3.5+19, 200, 18) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
     EZLog(@"aIterms ==> %@", aItems);
     
     NSString *title = topic.Title;
     NSString *content = topic.Content;
-    content = [self newContent:content];
-    [view buildContentLabel:title frame:RECT(50,  y-3.5+19+20, APP_SCREEN_WIDTH-70, 30) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
-    [view buildContentLabel:content frame:RECT(50,  y-3.5+50, APP_SCREEN_WIDTH-70, 200) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+//    content = [self newContent:content];
+    [view buildContentLabel:title frame:RECT(TimeAxisCellLeft,  y-3.5+19+20, APP_SCREEN_WIDTH-70, 30) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
+    [view buildContentLabel:content frame:RECT(TimeAxisCellLeft,  y-3.5+50, APP_SCREEN_WIDTH-70, 200) font:Font(12) color:UIColorFromRGB(0x1a1a1a)];
 }
 
 -(NSString *) newContent:(NSString *)content
