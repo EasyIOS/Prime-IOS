@@ -8,6 +8,9 @@
 
 #import "AuthorEntity.h"
 
+@protocol RuserEntity
+@end
+
 @interface RuserEntity : AuthorEntity
 
 @end

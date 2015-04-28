@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AppendEntity : NSObject
+@protocol AppendEntity
+@end
+
+@interface AppendEntity : Model
 
 @end

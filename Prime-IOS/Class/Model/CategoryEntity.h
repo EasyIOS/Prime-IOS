@@ -8,20 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CategoryEntity : NSObject
+@protocol CategoryEntity
+@end
 
-@property (nonatomic, strong) NSString *eId;
-@property (nonatomic, strong) NSString *cname;
-@property (nonatomic, strong) NSString *content;
-@property (nonatomic, strong) NSString *keywords;
-@property (nonatomic, strong) NSString *ico;
-@property (nonatomic, strong) NSString *master;
+@interface CategoryEntity : Model
 
-@property (nonatomic, strong) NSString *permitted;
-@property (nonatomic, strong) NSString *listnum;
-@property (nonatomic, strong) NSString *clevel;
-@property (nonatomic, strong) NSString *cord;
-@property (nonatomic, strong) NSString *order;
-@property (nonatomic, strong) NSString *subCategories;
+@property (nonatomic, strong) NSString *Id_;
+@property (nonatomic, strong) NSString *Cname;
+@property (nonatomic, strong) NSString *Content;
+@property (nonatomic, strong) NSString *Keywords;
+@property (nonatomic, strong) NSString *Ico;
+@property (nonatomic, strong) NSString *Master;
+
+@property (nonatomic, strong) NSString *Permit;
+@property (nonatomic, strong) NSString *Listnum;
+@property (nonatomic, strong) NSString *Clevel;
+@property (nonatomic, strong) NSString *Cord;
+@property (nonatomic, strong) NSString *Order;
+@property (nonatomic, strong) NSString<Optional> *SubCategories;
 
 @end
