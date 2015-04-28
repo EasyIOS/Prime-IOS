@@ -12,6 +12,8 @@
 #import "PRFeedRequest.h"
 #import "TopicEntity.h"
 
+#define DataPath @"Data/List"
+
 @interface PRTimeAxisScene ()
 
 @end
@@ -29,15 +31,24 @@
         @strongify(self);
         BOOL success = [[req.output objectForKey:@"Msg"] isEqualToString:@"Success"];
         if (success) {
-            NSError* err = nil;
-            TopicEntity *country = [[TopicEntity alloc] initWithDictionary:[[req.output objectAtPath:@"Data/List"] objectAtIndex:0] error:&err];
-            
+            NSMutableArray *dataArray = [self configData:req];
             PRTimeAxisTableView *tabView = [[PRTimeAxisTableView alloc] initWithFrame:CGRectMake(0, 64, 320, 568)
                                                                                 style:UITableViewStylePlain
-                                                                                 data:[req.output objectAtPath:@"Data/List"]];
+                                                                                 data:dataArray];
             [self.view addSubview:tabView];
         }
     } error:nil];
+}
+
+-(NSMutableArray *) configData:(PRFeedRequest *)response
+{
+    NSMutableArray *entityArray = [NSMutableArray array];
+    [[response.output objectAtPath:DataPath] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSError* err = nil;
+        TopicEntity *entity = [[TopicEntity alloc] initWithDictionary:[[response.output objectAtPath:DataPath] objectAtIndex:idx] error:&err];
+        [entityArray addObject:entity];
+    }];
+    return entityArray;
 }
 
 - (void)didReceiveMemoryWarning {
