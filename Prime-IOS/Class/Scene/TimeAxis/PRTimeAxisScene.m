@@ -10,6 +10,7 @@
 #import "PRTimeAxisTableView.h"
 #import "ActionSceneModel.h"
 #import "PRFeedRequest.h"
+#import "TopicEntity.h"
 
 @interface PRTimeAxisScene ()
 
@@ -26,10 +27,16 @@
     PRFeedRequest *req = [PRFeedRequest Request];
     [[ActionSceneModel sharedInstance] sendRequest:req success:^{
         @strongify(self);
-        PRTimeAxisTableView *tabView = [[PRTimeAxisTableView alloc] initWithFrame:CGRectMake(0, 64, 320, 568)
-                                                                            style:UITableViewStylePlain
-                                                                             data:[req.output objectAtPath:@"Data/List"]];
-        [self.view addSubview:tabView];
+        BOOL success = [[req.output objectForKey:@"Msg"] isEqualToString:@"Success"];
+        if (success) {
+            NSError* err = nil;
+            TopicEntity *country = [[TopicEntity alloc] initWithDictionary:[[req.output objectAtPath:@"Data/List"] objectAtIndex:0] error:&err];
+            
+            PRTimeAxisTableView *tabView = [[PRTimeAxisTableView alloc] initWithFrame:CGRectMake(0, 64, 320, 568)
+                                                                                style:UITableViewStylePlain
+                                                                                 data:[req.output objectAtPath:@"Data/List"]];
+            [self.view addSubview:tabView];
+        }
     } error:nil];
 }
 

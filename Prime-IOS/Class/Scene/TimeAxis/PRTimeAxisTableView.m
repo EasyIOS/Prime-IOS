@@ -28,9 +28,6 @@
 -(id) initWithFrame:(CGRect)frame style:(UITableViewStyle)style data:(NSMutableArray *)dataArray{
     self = [super initWithFrame:frame style:style];
     if(self){
-        self.separatorStyle = UITableViewCellSeparatorStyleNone;
-        self.allowsSelection = NO;
-        
         PRDatasourceCellBlock cellBlock = ^(PRTimeAxisTableViewCell *cell, TopicEntity *item){
             [cell configureCell:item];
         };

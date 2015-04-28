@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 EasyIOS. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Model.h"
 
-@interface AuthorEntity : NSObject
+@interface AuthorEntity : Model
 
 @property (nonatomic, strong) NSString *eId;
 @property (nonatomic, strong) NSString *uId;

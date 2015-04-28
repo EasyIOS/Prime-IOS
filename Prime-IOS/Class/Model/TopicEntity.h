@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 EasyIOS. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Model.h"
 #import "AppendEntity.h"
 #import "CategoryEntity.h"
 #import "AuthorEntity.h"
 #import "RuserEntity.h"
 
-@interface TopicEntity : NSObject
+@interface TopicEntity : Model
 
 @property (nonatomic, strong) NSString *eId;
 @property (nonatomic, strong) NSString *topicTitle;
