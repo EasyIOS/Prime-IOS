@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC004C93A24B4956369B63C /* Pods_Prime_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5295ADE61B838FE1009A616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE51B838FE1009A616C /* AppDelegate.swift */; };
 		5295ADE81B838FE1009A616C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE71B838FE1009A616C /* ViewController.swift */; };
 		5295ADEB1B838FE1009A616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADE91B838FE1009A616C /* Main.storyboard */; };
@@ -36,13 +37,17 @@
 		5295ADF51B838FE1009A616C /* Prime-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295ADFA1B838FE1009A616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5295ADFB1B838FE1009A616C /* Prime_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_iOSTests.swift; sourceTree = "<group>"; };
+		5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prime_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5295ADDD1B838FE1009A616C /* Frameworks */ = {
+		2691C181296DA48E7D4A99C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC004C93A24B4956369B63C /* Pods_Prime_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				5295ADE21B838FE1009A616C /* Prime-iOS */,
 				5295ADF81B838FE1009A616C /* Prime-iOSTests */,
 				5295ADE11B838FE1009A616C /* Products */,
+				928218CCDCAF324253FF5814 /* Pods */,
+				F462F3073F84AEA83F6A4E2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		928218CCDCAF324253FF5814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */,
+				FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F462F3073F84AEA83F6A4E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5295ADFF1B838FE1009A616C /* Build configuration list for PBXNativeTarget "Prime-iOS" */;
 			buildPhases = (
+				1A38A403A26998663E538219 /* Check Pods Manifest.lock */,
 				5295ADDC1B838FE1009A616C /* Sources */,
-				5295ADDD1B838FE1009A616C /* Frameworks */,
 				5295ADDE1B838FE1009A616C /* Resources */,
+				355062B45FC0B7D87ADD263C /* Copy Pods Resources */,
+				2691C181296DA48E7D4A99C7 /* Frameworks */,
+				B8F2F9B6217E0018DD573309 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A38A403A26998663E538219 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		355062B45FC0B7D87ADD263C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8F2F9B6217E0018DD573309 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5295ADDC1B838FE1009A616C /* Sources */ = {
@@ -338,6 +413,7 @@
 		};
 		5295AE001B838FE1009A616C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Prime-iOS/Info.plist";
@@ -348,6 +424,7 @@
 		};
 		5295AE011B838FE1009A616C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Prime-iOS/Info.plist";
@@ -409,6 +486,7 @@
 				5295AE011B838FE1009A616C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5295AE021B838FE1009A616C /* Build configuration list for PBXNativeTarget "Prime-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +495,7 @@
 				5295AE041B838FE1009A616C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
