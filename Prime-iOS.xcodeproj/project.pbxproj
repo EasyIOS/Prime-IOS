@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BC004C93A24B4956369B63C /* Pods_Prime_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0DEEA5BBC106E37918274056 /* Pods_Prime_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5295ADE61B838FE1009A616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE51B838FE1009A616C /* AppDelegate.swift */; };
-		5295ADE81B838FE1009A616C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE71B838FE1009A616C /* ViewController.swift */; };
+		5295ADE81B838FE1009A616C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE71B838FE1009A616C /* RootViewController.swift */; };
 		5295ADEB1B838FE1009A616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADE91B838FE1009A616C /* Main.storyboard */; };
 		5295ADED1B838FE1009A616C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADEC1B838FE1009A616C /* Images.xcassets */; };
 		5295ADF01B838FE1009A616C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADEE1B838FE1009A616C /* LaunchScreen.xib */; };
@@ -30,7 +30,7 @@
 		5295ADE01B838FE1009A616C /* Prime-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295ADE41B838FE1009A616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5295ADE51B838FE1009A616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5295ADE71B838FE1009A616C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5295ADE71B838FE1009A616C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		5295ADEA1B838FE1009A616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5295ADEC1B838FE1009A616C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5295ADEF1B838FE1009A616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -43,18 +43,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2691C181296DA48E7D4A99C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BC004C93A24B4956369B63C /* Pods_Prime_iOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5295ADF21B838FE1009A616C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54F72E703417F460BEBE5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DEEA5BBC106E37918274056 /* Pods_Prime_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				5295ADE51B838FE1009A616C /* AppDelegate.swift */,
-				5295ADE71B838FE1009A616C /* ViewController.swift */,
+				5295ADE71B838FE1009A616C /* RootViewController.swift */,
 				5295ADE91B838FE1009A616C /* Main.storyboard */,
 				5295ADEC1B838FE1009A616C /* Images.xcassets */,
 				5295ADEE1B838FE1009A616C /* LaunchScreen.xib */,
@@ -143,12 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5295ADFF1B838FE1009A616C /* Build configuration list for PBXNativeTarget "Prime-iOS" */;
 			buildPhases = (
-				1A38A403A26998663E538219 /* Check Pods Manifest.lock */,
+				5EF40DFACAD16679B18D4BB2 /* Check Pods Manifest.lock */,
 				5295ADDC1B838FE1009A616C /* Sources */,
 				5295ADDE1B838FE1009A616C /* Resources */,
-				355062B45FC0B7D87ADD263C /* Copy Pods Resources */,
-				2691C181296DA48E7D4A99C7 /* Frameworks */,
-				B8F2F9B6217E0018DD573309 /* Embed Pods Frameworks */,
+				D54F72E703417F460BEBE5C9 /* Frameworks */,
+				6B275F24D4D9DA73E5B45080 /* Embed Pods Frameworks */,
+				EDD8E7E90D445EDF2FD77A6E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,7 +235,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A38A403A26998663E538219 /* Check Pods Manifest.lock */ = {
+		5EF40DFACAD16679B18D4BB2 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,22 +250,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		355062B45FC0B7D87ADD263C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8F2F9B6217E0018DD573309 /* Embed Pods Frameworks */ = {
+		6B275F24D4D9DA73E5B45080 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +265,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EDD8E7E90D445EDF2FD77A6E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5295ADE81B838FE1009A616C /* ViewController.swift in Sources */,
+				5295ADE81B838FE1009A616C /* RootViewController.swift in Sources */,
 				5295ADE61B838FE1009A616C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

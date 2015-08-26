@@ -29,11 +29,11 @@ extension String {
     }
     
     public var urlencode :String {
-        return self.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        return self.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
     }
     
     public var urldecode :String {
-        return self.stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        return self.stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
     }
     
     public var trim :String {
