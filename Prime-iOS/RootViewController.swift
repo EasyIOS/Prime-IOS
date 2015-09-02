@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import EasyIOS
 
 class RootViewController: UIViewController {
 
+    var timeNav:EZNavigationController?
+    var newsNav:EZNavigationController?
+    var personNavi:EZNavigationController?
+    var activityNavi:EZNavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -37,6 +37,7 @@
 		5295ADF51B838FE1009A616C /* Prime-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295ADFA1B838FE1009A616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5295ADFB1B838FE1009A616C /* Prime_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_iOSTests.swift; sourceTree = "<group>"; };
+		52D4A8F91B95F9940077A161 /* Prime-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prime-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prime_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 				5295ADEC1B838FE1009A616C /* Images.xcassets */,
 				5295ADEE1B838FE1009A616C /* LaunchScreen.xib */,
 				5295ADE31B838FE1009A616C /* Supporting Files */,
+				52D4A8F91B95F9940077A161 /* Prime-iOS-Bridging-Header.h */,
 			);
 			path = "Prime-iOS";
 			sourceTree = "<group>";
@@ -416,9 +418,12 @@
 			baseConfigurationReference = F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Prime-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prime-iOS/Prime-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -427,9 +432,11 @@
 			baseConfigurationReference = FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Prime-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prime-iOS/Prime-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
