@@ -6,21 +6,66 @@
 //  Copyright (c) 2015年 EasyiOS. All rights reserved.
 //
 
+
 import UIKit
-import EasyIOS
+import FoldingTabBar.YALAnimatingTabBarConstants
 
 class RootViewController: UIViewController {
 
-    var timeNav:EZNavigationController?
-    var newsNav:EZNavigationController?
-    var personNavi:EZNavigationController?
-    var activityNavi:EZNavigationController?
+    var timeNav:PRNavigationController!
+    var messageNav:PRNavigationController!
+    var personNav:PRNavigationController!
+    var eventNav:PRNavigationController!
+    
+    var tabbarController:PRTabBarController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setupViewController()
     }
 
+    func setupViewController() {
+        timeNav = PRNavigationController(rootViewController: PRTimeAixsScene())
+        messageNav = PRNavigationController(rootViewController: PRMessageScene())
+        personNav = PRNavigationController(rootViewController: PRPersonalScene())
+        eventNav = PRNavigationController(rootViewController: PREventScene())
+        
+        tabbarController = PRTabBarController()
+        
+        //prepare leftBarItems
+        var item1:PRTabBarIterm = PRTabBarIterm(itemImage:UIImage(named: "nearby_icon"), leftItemImage:UIImage(named: "search_icon"), rightItemImage:UIImage(named: "new_chat_icon"))
+        
+        var item2:PRTabBarIterm = PRTabBarIterm(itemImage:UIImage(named: "profile_icon"), leftItemImage:UIImage(named: "1"), rightItemImage:UIImage(named: "1"))
+        
+        tabbarController.leftBarItems = [item1, item2]
+        
+        
+        //prepare rightBarItems
+        var item3:PRTabBarIterm = PRTabBarIterm(itemImage:UIImage(named: "chats_icon"), leftItemImage:UIImage(named: "1"), rightItemImage:UIImage(named: "1"))
+        
+        var item4:PRTabBarIterm = PRTabBarIterm(itemImage:UIImage(named: "settings_icon"), leftItemImage:UIImage(named: "edit_icon"), rightItemImage:UIImage(named: "1"))
+        
+        tabbarController.rightBarItems = [item3, item4]
+        tabbarController.centerButtonImage = UIImage(named: "plus_icon")
+        
+        
+        //customize tabBarView
+        tabbarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight
+        
+        tabbarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
+        tabbarController.tabBarView.backgroundColor = UIColor.clearColor();
+        tabbarController.tabBarView.tabBarColor = UIColor.blueColor()
+        tabbarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
+        tabbarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
+        tabbarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
+        
+        tabbarController.viewControllers = [timeNav, messageNav, eventNav, personNav]
+        tabbarController.selectedIndex = 0;
+        view.addSubview(tabbarController.view)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

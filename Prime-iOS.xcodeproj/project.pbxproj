@@ -10,10 +10,16 @@
 		0DEEA5BBC106E37918274056 /* Pods_Prime_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5295ADE61B838FE1009A616C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE51B838FE1009A616C /* AppDelegate.swift */; };
 		5295ADE81B838FE1009A616C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADE71B838FE1009A616C /* RootViewController.swift */; };
-		5295ADEB1B838FE1009A616C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADE91B838FE1009A616C /* Main.storyboard */; };
 		5295ADED1B838FE1009A616C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADEC1B838FE1009A616C /* Images.xcassets */; };
 		5295ADF01B838FE1009A616C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADEE1B838FE1009A616C /* LaunchScreen.xib */; };
 		5295ADFC1B838FE1009A616C /* Prime_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADFB1B838FE1009A616C /* Prime_iOSTests.swift */; };
+		52D0FDC51B9899AC000607DF /* PREventScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC41B9899AC000607DF /* PREventScene.swift */; };
+		52D0FDC71B989B9D000607DF /* PRTimeAixsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC61B989B9D000607DF /* PRTimeAixsScene.swift */; };
+		52D0FDC91B989BE6000607DF /* PRMessageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC81B989BE6000607DF /* PRMessageScene.swift */; };
+		52D0FDCB1B989C24000607DF /* PRPersonalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDCA1B989C24000607DF /* PRPersonalScene.swift */; };
+		52D0FDCD1B989C70000607DF /* PRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDCC1B989C70000607DF /* PRNavigationController.swift */; };
+		52D0FDCF1B989CF1000607DF /* PRTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDCE1B989CF1000607DF /* PRTabBarController.swift */; };
+		52D0FDD11B989F1C000607DF /* PRTabBarIterm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDD01B989F1C000607DF /* PRTabBarIterm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +37,18 @@
 		5295ADE41B838FE1009A616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5295ADE51B838FE1009A616C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5295ADE71B838FE1009A616C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		5295ADEA1B838FE1009A616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5295ADEC1B838FE1009A616C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5295ADEF1B838FE1009A616C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5295ADF51B838FE1009A616C /* Prime-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prime-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5295ADFA1B838FE1009A616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5295ADFB1B838FE1009A616C /* Prime_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_iOSTests.swift; sourceTree = "<group>"; };
-		52D4A8F91B95F9940077A161 /* Prime-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prime-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		52D0FDC41B9899AC000607DF /* PREventScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PREventScene.swift; path = Class/Scene/Event/PREventScene.swift; sourceTree = "<group>"; };
+		52D0FDC61B989B9D000607DF /* PRTimeAixsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTimeAixsScene.swift; path = Class/Scene/TimeAxis/PRTimeAixsScene.swift; sourceTree = "<group>"; };
+		52D0FDC81B989BE6000607DF /* PRMessageScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRMessageScene.swift; path = Class/Scene/Message/PRMessageScene.swift; sourceTree = "<group>"; };
+		52D0FDCA1B989C24000607DF /* PRPersonalScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRPersonalScene.swift; path = Class/Scene/Personal/PRPersonalScene.swift; sourceTree = "<group>"; };
+		52D0FDCC1B989C70000607DF /* PRNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRNavigationController.swift; path = Class/Scene/Bar/PRNavigationController.swift; sourceTree = "<group>"; };
+		52D0FDCE1B989CF1000607DF /* PRTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTabBarController.swift; path = Class/Scene/Bar/PRTabBarController.swift; sourceTree = "<group>"; };
+		52D0FDD01B989F1C000607DF /* PRTabBarIterm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTabBarIterm.swift; path = Class/Scene/Bar/PRTabBarIterm.swift; sourceTree = "<group>"; };
 		5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prime_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,13 +96,12 @@
 		5295ADE21B838FE1009A616C /* Prime-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				52D0FDBD1B98972B000607DF /* Class */,
 				5295ADE51B838FE1009A616C /* AppDelegate.swift */,
 				5295ADE71B838FE1009A616C /* RootViewController.swift */,
-				5295ADE91B838FE1009A616C /* Main.storyboard */,
 				5295ADEC1B838FE1009A616C /* Images.xcassets */,
 				5295ADEE1B838FE1009A616C /* LaunchScreen.xib */,
 				5295ADE31B838FE1009A616C /* Supporting Files */,
-				52D4A8F91B95F9940077A161 /* Prime-iOS-Bridging-Header.h */,
 			);
 			path = "Prime-iOS";
 			sourceTree = "<group>";
@@ -119,6 +129,68 @@
 				5295ADFA1B838FE1009A616C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52D0FDBD1B98972B000607DF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDBE1B989735000607DF /* Scene */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		52D0FDBE1B989735000607DF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDBF1B989752000607DF /* Event */,
+				52D0FDC21B989778000607DF /* TimeAxis */,
+				52D0FDC11B989772000607DF /* Message */,
+				52D0FDC01B989759000607DF /* Personal */,
+				52D0FDC31B98978E000607DF /* Bar */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		52D0FDBF1B989752000607DF /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDC41B9899AC000607DF /* PREventScene.swift */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		52D0FDC01B989759000607DF /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDCA1B989C24000607DF /* PRPersonalScene.swift */,
+			);
+			name = Personal;
+			sourceTree = "<group>";
+		};
+		52D0FDC11B989772000607DF /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDC81B989BE6000607DF /* PRMessageScene.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		52D0FDC21B989778000607DF /* TimeAxis */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDC61B989B9D000607DF /* PRTimeAixsScene.swift */,
+			);
+			name = TimeAxis;
+			sourceTree = "<group>";
+		};
+		52D0FDC31B98978E000607DF /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				52D0FDCC1B989C70000607DF /* PRNavigationController.swift */,
+				52D0FDCE1B989CF1000607DF /* PRTabBarController.swift */,
+				52D0FDD01B989F1C000607DF /* PRTabBarIterm.swift */,
+			);
+			name = Bar;
 			sourceTree = "<group>";
 		};
 		928218CCDCAF324253FF5814 /* Pods */ = {
@@ -221,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5295ADEB1B838FE1009A616C /* Main.storyboard in Resources */,
 				5295ADF01B838FE1009A616C /* LaunchScreen.xib in Resources */,
 				5295ADED1B838FE1009A616C /* Images.xcassets in Resources */,
 			);
@@ -289,7 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D0FDCB1B989C24000607DF /* PRPersonalScene.swift in Sources */,
+				52D0FDC91B989BE6000607DF /* PRMessageScene.swift in Sources */,
+				52D0FDD11B989F1C000607DF /* PRTabBarIterm.swift in Sources */,
+				52D0FDC71B989B9D000607DF /* PRTimeAixsScene.swift in Sources */,
 				5295ADE81B838FE1009A616C /* RootViewController.swift in Sources */,
+				52D0FDCD1B989C70000607DF /* PRNavigationController.swift in Sources */,
+				52D0FDCF1B989CF1000607DF /* PRTabBarController.swift in Sources */,
+				52D0FDC51B9899AC000607DF /* PREventScene.swift in Sources */,
 				5295ADE61B838FE1009A616C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +391,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5295ADE91B838FE1009A616C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5295ADEA1B838FE1009A616C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5295ADEE1B838FE1009A616C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,7 +492,7 @@
 				INFOPLIST_FILE = "Prime-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Prime-iOS/Prime-iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -436,7 +506,7 @@
 				INFOPLIST_FILE = "Prime-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Prime-iOS/Prime-iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
