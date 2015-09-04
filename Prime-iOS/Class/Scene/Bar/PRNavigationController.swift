@@ -14,6 +14,9 @@ class PRNavigationController: EZNavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        navigationBar.translucent = true
+        navigationBar .setBackgroundImage(UIImage(named: "naviBar_icon"), forBarMetrics: UIBarMetrics.Default)
     }
 
     override func didReceiveMemoryWarning() {

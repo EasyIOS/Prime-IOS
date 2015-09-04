@@ -14,12 +14,23 @@
 		5295ADF01B838FE1009A616C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5295ADEE1B838FE1009A616C /* LaunchScreen.xib */; };
 		5295ADFC1B838FE1009A616C /* Prime_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5295ADFB1B838FE1009A616C /* Prime_iOSTests.swift */; };
 		52D0FDC51B9899AC000607DF /* PREventScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC41B9899AC000607DF /* PREventScene.swift */; };
-		52D0FDC71B989B9D000607DF /* PRTimeAixsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC61B989B9D000607DF /* PRTimeAixsScene.swift */; };
+		52D0FDC71B989B9D000607DF /* PRTimeAxisScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC61B989B9D000607DF /* PRTimeAxisScene.swift */; };
 		52D0FDC91B989BE6000607DF /* PRMessageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDC81B989BE6000607DF /* PRMessageScene.swift */; };
 		52D0FDCB1B989C24000607DF /* PRPersonalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDCA1B989C24000607DF /* PRPersonalScene.swift */; };
 		52D0FDCD1B989C70000607DF /* PRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDCC1B989C70000607DF /* PRNavigationController.swift */; };
 		52D0FDCF1B989CF1000607DF /* PRTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDCE1B989CF1000607DF /* PRTabBarController.swift */; };
 		52D0FDD11B989F1C000607DF /* PRTabBarIterm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0FDD01B989F1C000607DF /* PRTabBarIterm.swift */; };
+		52D3FBD51B9995BE00FADC3F /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBCE1B9995BE00FADC3F /* MKButton.swift */; };
+		52D3FBD61B9995BE00FADC3F /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBCF1B9995BE00FADC3F /* MKColor.swift */; };
+		52D3FBD71B9995BE00FADC3F /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBD01B9995BE00FADC3F /* MKImageView.swift */; };
+		52D3FBD81B9995BE00FADC3F /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBD11B9995BE00FADC3F /* MKLabel.swift */; };
+		52D3FBD91B9995BE00FADC3F /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBD21B9995BE00FADC3F /* MKLayer.swift */; };
+		52D3FBDA1B9995BE00FADC3F /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBD31B9995BE00FADC3F /* MKTableViewCell.swift */; };
+		52D3FBDB1B9995BE00FADC3F /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBD41B9995BE00FADC3F /* MKTextField.swift */; };
+		52D3FBDE1B9996F400FADC3F /* PRTimeAxisLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBDC1B9996F400FADC3F /* PRTimeAxisLabelDelegate.swift */; };
+		52D3FBDF1B9996F400FADC3F /* PRTimeAxisSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3FBDD1B9996F400FADC3F /* PRTimeAxisSceneModel.swift */; };
+		52D3FBE41B99988E00FADC3F /* PRTimeAxisScene.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52D3FBE21B99988E00FADC3F /* PRTimeAxisScene.xml */; };
+		52D3FBE51B99988E00FADC3F /* url.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52D3FBE31B99988E00FADC3F /* url.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +54,23 @@
 		5295ADFA1B838FE1009A616C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5295ADFB1B838FE1009A616C /* Prime_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime_iOSTests.swift; sourceTree = "<group>"; };
 		52D0FDC41B9899AC000607DF /* PREventScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PREventScene.swift; path = Class/Scene/Event/PREventScene.swift; sourceTree = "<group>"; };
-		52D0FDC61B989B9D000607DF /* PRTimeAixsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTimeAixsScene.swift; path = Class/Scene/TimeAxis/PRTimeAixsScene.swift; sourceTree = "<group>"; };
+		52D0FDC61B989B9D000607DF /* PRTimeAxisScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTimeAxisScene.swift; path = Class/Scene/TimeAxis/PRTimeAxisScene.swift; sourceTree = "<group>"; };
 		52D0FDC81B989BE6000607DF /* PRMessageScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRMessageScene.swift; path = Class/Scene/Message/PRMessageScene.swift; sourceTree = "<group>"; };
 		52D0FDCA1B989C24000607DF /* PRPersonalScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRPersonalScene.swift; path = Class/Scene/Personal/PRPersonalScene.swift; sourceTree = "<group>"; };
 		52D0FDCC1B989C70000607DF /* PRNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRNavigationController.swift; path = Class/Scene/Bar/PRNavigationController.swift; sourceTree = "<group>"; };
 		52D0FDCE1B989CF1000607DF /* PRTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTabBarController.swift; path = Class/Scene/Bar/PRTabBarController.swift; sourceTree = "<group>"; };
 		52D0FDD01B989F1C000607DF /* PRTabBarIterm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTabBarIterm.swift; path = Class/Scene/Bar/PRTabBarIterm.swift; sourceTree = "<group>"; };
+		52D3FBCE1B9995BE00FADC3F /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Class/Components/MKComponents/MKButton.swift; sourceTree = "<group>"; };
+		52D3FBCF1B9995BE00FADC3F /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Class/Components/MKComponents/MKColor.swift; sourceTree = "<group>"; };
+		52D3FBD01B9995BE00FADC3F /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Class/Components/MKComponents/MKImageView.swift; sourceTree = "<group>"; };
+		52D3FBD11B9995BE00FADC3F /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Class/Components/MKComponents/MKLabel.swift; sourceTree = "<group>"; };
+		52D3FBD21B9995BE00FADC3F /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Class/Components/MKComponents/MKLayer.swift; sourceTree = "<group>"; };
+		52D3FBD31B9995BE00FADC3F /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Class/Components/MKComponents/MKTableViewCell.swift; sourceTree = "<group>"; };
+		52D3FBD41B9995BE00FADC3F /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Class/Components/MKComponents/MKTextField.swift; sourceTree = "<group>"; };
+		52D3FBDC1B9996F400FADC3F /* PRTimeAxisLabelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTimeAxisLabelDelegate.swift; path = Class/Scene/TimeAxis/PRTimeAxisLabelDelegate.swift; sourceTree = "<group>"; };
+		52D3FBDD1B9996F400FADC3F /* PRTimeAxisSceneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTimeAxisSceneModel.swift; path = Class/Scene/TimeAxis/PRTimeAxisSceneModel.swift; sourceTree = "<group>"; };
+		52D3FBE21B99988E00FADC3F /* PRTimeAxisScene.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PRTimeAxisScene.xml; path = Class/Scene/Xml/PRTimeAxisScene.xml; sourceTree = "<group>"; };
+		52D3FBE31B99988E00FADC3F /* url.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = url.plist; path = Class/Scene/Xml/url.plist; sourceTree = "<group>"; };
 		5944A6711C69C8F915406DD4 /* Pods_Prime_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prime_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F289F012BBFB4F45CC3432A6 /* Pods-Prime-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4916BA08CBEB19F551D405 /* Pods-Prime-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prime-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prime-iOS/Pods-Prime-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,9 +118,9 @@
 		5295ADE21B838FE1009A616C /* Prime-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				52D0FDBD1B98972B000607DF /* Class */,
 				5295ADE51B838FE1009A616C /* AppDelegate.swift */,
 				5295ADE71B838FE1009A616C /* RootViewController.swift */,
+				52D0FDBD1B98972B000607DF /* Class */,
 				5295ADEC1B838FE1009A616C /* Images.xcassets */,
 				5295ADEE1B838FE1009A616C /* LaunchScreen.xib */,
 				5295ADE31B838FE1009A616C /* Supporting Files */,
@@ -135,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				52D0FDBE1B989735000607DF /* Scene */,
+				52D3FBBE1B99952300FADC3F /* Components */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -142,6 +165,7 @@
 		52D0FDBE1B989735000607DF /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				52D3FBE11B99982D00FADC3F /* Xml */,
 				52D0FDBF1B989752000607DF /* Event */,
 				52D0FDC21B989778000607DF /* TimeAxis */,
 				52D0FDC11B989772000607DF /* Message */,
@@ -178,7 +202,9 @@
 		52D0FDC21B989778000607DF /* TimeAxis */ = {
 			isa = PBXGroup;
 			children = (
-				52D0FDC61B989B9D000607DF /* PRTimeAixsScene.swift */,
+				52D0FDC61B989B9D000607DF /* PRTimeAxisScene.swift */,
+				52D3FBDC1B9996F400FADC3F /* PRTimeAxisLabelDelegate.swift */,
+				52D3FBDD1B9996F400FADC3F /* PRTimeAxisSceneModel.swift */,
 			);
 			name = TimeAxis;
 			sourceTree = "<group>";
@@ -191,6 +217,37 @@
 				52D0FDD01B989F1C000607DF /* PRTabBarIterm.swift */,
 			);
 			name = Bar;
+			sourceTree = "<group>";
+		};
+		52D3FBBE1B99952300FADC3F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				52D3FBBF1B99954E00FADC3F /* MKComponents */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		52D3FBBF1B99954E00FADC3F /* MKComponents */ = {
+			isa = PBXGroup;
+			children = (
+				52D3FBCE1B9995BE00FADC3F /* MKButton.swift */,
+				52D3FBCF1B9995BE00FADC3F /* MKColor.swift */,
+				52D3FBD01B9995BE00FADC3F /* MKImageView.swift */,
+				52D3FBD11B9995BE00FADC3F /* MKLabel.swift */,
+				52D3FBD21B9995BE00FADC3F /* MKLayer.swift */,
+				52D3FBD31B9995BE00FADC3F /* MKTableViewCell.swift */,
+				52D3FBD41B9995BE00FADC3F /* MKTextField.swift */,
+			);
+			name = MKComponents;
+			sourceTree = "<group>";
+		};
+		52D3FBE11B99982D00FADC3F /* Xml */ = {
+			isa = PBXGroup;
+			children = (
+				52D3FBE21B99988E00FADC3F /* PRTimeAxisScene.xml */,
+				52D3FBE31B99988E00FADC3F /* url.plist */,
+			);
+			name = Xml;
 			sourceTree = "<group>";
 		};
 		928218CCDCAF324253FF5814 /* Pods */ = {
@@ -294,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5295ADF01B838FE1009A616C /* LaunchScreen.xib in Resources */,
+				52D3FBE41B99988E00FADC3F /* PRTimeAxisScene.xml in Resources */,
+				52D3FBE51B99988E00FADC3F /* url.plist in Resources */,
 				5295ADED1B838FE1009A616C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,14 +419,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D3FBD61B9995BE00FADC3F /* MKColor.swift in Sources */,
 				52D0FDCB1B989C24000607DF /* PRPersonalScene.swift in Sources */,
+				52D3FBDE1B9996F400FADC3F /* PRTimeAxisLabelDelegate.swift in Sources */,
+				52D3FBDA1B9995BE00FADC3F /* MKTableViewCell.swift in Sources */,
+				52D3FBD71B9995BE00FADC3F /* MKImageView.swift in Sources */,
+				52D3FBD91B9995BE00FADC3F /* MKLayer.swift in Sources */,
 				52D0FDC91B989BE6000607DF /* PRMessageScene.swift in Sources */,
 				52D0FDD11B989F1C000607DF /* PRTabBarIterm.swift in Sources */,
-				52D0FDC71B989B9D000607DF /* PRTimeAixsScene.swift in Sources */,
+				52D0FDC71B989B9D000607DF /* PRTimeAxisScene.swift in Sources */,
 				5295ADE81B838FE1009A616C /* RootViewController.swift in Sources */,
+				52D3FBD81B9995BE00FADC3F /* MKLabel.swift in Sources */,
 				52D0FDCD1B989C70000607DF /* PRNavigationController.swift in Sources */,
 				52D0FDCF1B989CF1000607DF /* PRTabBarController.swift in Sources */,
+				52D3FBD51B9995BE00FADC3F /* MKButton.swift in Sources */,
+				52D3FBDB1B9995BE00FADC3F /* MKTextField.swift in Sources */,
 				52D0FDC51B9899AC000607DF /* PREventScene.swift in Sources */,
+				52D3FBDF1B9996F400FADC3F /* PRTimeAxisSceneModel.swift in Sources */,
 				5295ADE61B838FE1009A616C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

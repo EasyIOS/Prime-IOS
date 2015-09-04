@@ -8,7 +8,7 @@
 
 import EasyIOS
 
-class PRMessageScene: EZScene {
+class PRMessageScene: EUScene {
 
     override func viewDidLoad() {
         super.viewDidLoad()

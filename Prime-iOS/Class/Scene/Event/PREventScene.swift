@@ -8,7 +8,7 @@
 
 import EasyIOS
 
-class PREventScene: EZScene {
+class PREventScene: EUScene {
 
     override func viewDidLoad() {
         super.viewDidLoad()

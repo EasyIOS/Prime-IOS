@@ -7,7 +7,7 @@
 //
 
 
-import UIKit
+import EasyIOS
 import FoldingTabBar.YALAnimatingTabBarConstants
 
 class RootViewController: UIViewController {
@@ -27,7 +27,7 @@ class RootViewController: UIViewController {
     }
 
     func setupViewController() {
-        timeNav = PRNavigationController(rootViewController: PRTimeAixsScene())
+        timeNav = PRNavigationController(rootViewController: PRTimeAxisScene())
         messageNav = PRNavigationController(rootViewController: PRMessageScene())
         personNav = PRNavigationController(rootViewController: PRPersonalScene())
         eventNav = PRNavigationController(rootViewController: PREventScene())
@@ -56,7 +56,7 @@ class RootViewController: UIViewController {
         
         tabbarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset;
         tabbarController.tabBarView.backgroundColor = UIColor.clearColor();
-        tabbarController.tabBarView.tabBarColor = UIColor.blueColor()
+        tabbarController.tabBarView.tabBarColor = UIColor(hexString: "#34cdff")
         tabbarController.tabBarViewHeight = YALTabBarViewDefaultHeight;
         tabbarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets;
         tabbarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets;
@@ -64,6 +64,7 @@ class RootViewController: UIViewController {
         tabbarController.viewControllers = [timeNav, messageNav, eventNav, personNav]
         tabbarController.selectedIndex = 0;
         view.addSubview(tabbarController.view)
+        LIVE_LOAD_PATH = __FILE__.stringByDeletingLastPathComponent.stringByAppendingString("/Class/Scene/Xml")  //xml文件的路径（项目路径）
     }
     
     override func didReceiveMemoryWarning() {

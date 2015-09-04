@@ -207,10 +207,10 @@ extension UIView {
     }
     
     
-    public func setCornerRadius (radius: CGFloat) {
-        self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
-    }
+//    public func setCornerRadius (radius: CGFloat) {
+//        self.layer.cornerRadius = radius
+//        self.layer.masksToBounds = true
+//    }
     
     
     public func drawCircle (fillColor: UIColor,
